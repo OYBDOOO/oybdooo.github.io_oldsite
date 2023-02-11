@@ -4,6 +4,56 @@
   
   
   <entry>
+    <title>理论力学期末复习</title>
+    <link href="/2023/02/11/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
+    <url>/2023/02/11/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言">-1. 前言</h1><p>这段时间太摆，天天大颓，不补天不行了。<del>好自责呜呜呜</del></p><h1 id="前置芝士">0. 前置芝士</h1><ol type="1"><li>平面极坐标：<spanclass="math inline">\(\dot{e_r}=\dot{\theta}e_\theta\)</span>，<spanclass="math inline">\(\dot{e_\theta}=-\dot{\theta}e_r\)</span></li><li>球坐标： <spanclass="math display">\[\dot{e_r}=\dot{\theta}e_\theta+\sin \theta\dot{\phi}e_\phi\]</span></li></ol><h1 id="拉格朗日方程">1. 拉格朗日方程</h1><ol type="1"><li><p>纯滚动约束：接触点速度为 <spanclass="math inline">\(0\)</span></p></li><li><p>判断一个约束是否为完整约束：</p><p>例如：<spanclass="math inline">\(dx\sin\theta-dy\cos\theta=0\)</span></p><p>令：<spanclass="math inline">\(F=(\sin\theta,-\cos\theta,0)\)</span></p><p>之后计算<span class="math inline">\(F\cdot (\nabla\timesF)=0\)</span>则为完整约束，不为<spanclass="math inline">\(0\)</span>则为不完整约束</p></li><li><p>求解静平衡问题简便方法：势能最小原理（此时没有非保守力）</p></li><li><p>理想约束条件<spanclass="math inline">\(\rightarrow\)</span>虚功为0，即<spanclass="math inline">\(\sum R_i·\delta r_i=0\)</span>（<spanclass="math inline">\(R_i\)</span>为约束力）（我们遇到的情况就默认一波理想约束）</p></li><li><p>系统平衡：<span class="math inline">\(F_i+R_i=0\)</span> +理想约束条件<span class="math inline">\(\rightarrow\sum\limits_iF_i\cdot \delta r_i=0\)</span></p><p><span class="math inline">\(\sum\limits_j(\sum\limits_iF_i\cdot\frac{\partial r_i}{\partial q_j})\delta q_j=0\)</span></p><p>由此可以定义出广义力<span class="math inline">\(Q_j=\sum\limits_iF_i\cdot \frac{\partial r_i}{\partial q_j}\)</span></p><p>方程为：<span class="math inline">\(\sum\limits_j Q_j\deltaq_j=0\)</span></p></li><li><p>达朗贝尔原理：<span class="math inline">\(\sum (F_i-m_i\ddot{r_i})·\delta r_i=0\)</span></p></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>基础课学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Vim從入門到入土</title>
+    <link href="/2023/02/10/Vim%E5%BE%9E%E5%85%A5%E9%96%80%E5%88%B0%E5%85%A5%E5%9C%9F/"/>
+    <url>/2023/02/10/Vim%E5%BE%9E%E5%85%A5%E9%96%80%E5%88%B0%E5%85%A5%E5%9C%9F/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言">前言</h1><p>被push学学vim，记录一下学习的过程，争取能学下来（好难啊，<del>什么阴间玩意</del>）</p><h1 id="前置芝士wsl">前置芝士——WSL</h1><p>不想用辣鸡虚拟机，不想用学校的vlab，不想放弃windows……</p><p>那就用Windows Subsystem for Linux！</p><p>听说win11可以自带linux软件的GUI界面炒鸡香，果断更新。</p><h2 id="需要记住的指令"><strong>需要记住的指令</strong></h2><ol type="1"><li>进入WSL（from Powershell） &gt; wsl</li><li>查看WSL状态 &gt; wsl -l -v</li><li>WSL关机 &gt; wsl --shutdown</li><li>从WSL返回到Powershell &gt; exit</li></ol><h1 id="vim">Vim</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>大二寒假part1（瀋陽）</title>
     <link href="/2023/02/04/%E5%A4%A7%E4%BA%8C%E5%AF%92%E5%81%87part1%EF%BC%88%E7%80%8B%E9%99%BD%EF%BC%89/"/>
     <url>/2023/02/04/%E5%A4%A7%E4%BA%8C%E5%AF%92%E5%81%87part1%EF%BC%88%E7%80%8B%E9%99%BD%EF%BC%89/</url>
@@ -71,31 +121,6 @@
     <tags>
       
       <tag>原创</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>文献阅读笔记</title>
-    <link href="/2022/12/15/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
-    <url>/2022/12/15/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</url>
-    
-    <content type="html"><![CDATA[<h1id="diverse-plasma-populations-and-structures-in-jupiters-magnetotail">1-DiversePlasma Populations and Structures in Jupiter's Magnetotail</h1><ul><li>The Jovian magnetotail is created by the <strong>interaction of thesupersonic solar wind with Jupiter's magnetic field andplasmas</strong>.</li><li>Jovian magnetotail stretches at least <spanclass="math inline">\(5\times 10^8\)</span> <spanclass="math inline">\(km\)</span> antisunward from Jupiter.</li><li>Io spews out volcanic gases (<spanclass="math inline">\(1000\)</span> <spanclass="math inline">\(kg\)</span> <spanclass="math inline">\(s^{-1}\)</span>, mostly S &amp; O) become ionizedand trapped in Jupiter's strong magnetic field forming Io torus.</li><li>Roughly:<ul><li>half of the torus ions are lost via <strong>chargeexchange</strong></li><li>half <strong>are transported radially outward and ultimately escapedown the tail</strong>.</li></ul></li><li>Jupiter's ionosphere provides a roughly comparable number of lightions (mainly <span class="math inline">\(H^{+}\)</span> and <spanclass="math inline">\(H_3^{+}\)</span> ) to the magnetosphere. The ionsalong with <strong>Jupiter's fast rotation rate</strong> creates a<strong>dense rotating plasma disk</strong> that <strong>dominates theinner magnetosphere</strong>.</li><li><strong>Key issue for the jovian magnetosphere</strong> : How morethan <span class="math inline">\(500\)</span> <spanclass="math inline">\(kg\)</span> <spanclass="math inline">\(s^{-1}\)</span> of heavy ions from Io and acomparable number of light ionospheric ions are lost from the systemdown the magnetotail.</li><li>From New Horizon(NH)'s observation SWAP : <spanclass="math inline">\((35eV/q&lt;\frac{E}{q}&lt;7500eV/q)\)</span><ul><li>near closest approach : narrow energy distributions of low-energyions</li><li><span class="math inline">\(&lt;130R_j\)</span> : low-energy tail ofthe hot plasma disk ion population (the fluxes peaked nearer to closestapproach &amp; periodicities associated with Jupiter's plasma diskrotation)</li><li><span class="math inline">\(&gt;75R_j\)</span> gugugu</li></ul></li><li>The SWAP observation $$ interesting periodicities<ul><li>10-hour jovian rotation can be seen on <spanclass="math inline">\(\sim 450R_j\)</span></li><li></li></ul></li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>科学研究</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>阅读笔记</tag>
       
     </tags>
     
