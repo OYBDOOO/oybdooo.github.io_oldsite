@@ -4,11 +4,61 @@
   
   
   <entry>
+    <title>概率论与数理统计期末复习</title>
+    <link href="/2023/02/12/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
+    <url>/2023/02/12/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言">0. 前言</h1><p>这科更啥也不会，还考的贼早……快来补天吧，这科不补要挂。</p><h1 id="随机变量及其分布">1. 随机变量及其分布</h1><h2 id="离散型">1.1 离散型</h2><ol type="1"><li>0-1分布/伯努利分布：<ul><li><span class="math inline">\(P(X=1)=p\)</span></li><li><span class="math inline">\(P(X=0)=1-p\)</span></li></ul></li><li>二项分布：<ul><li>一次试验发生概率<spanclass="math inline">\(p\)</span>。把试验重复<spanclass="math inline">\(n\)</span>次。<spanclass="math inline">\(X\)</span>为发生的次数。</li><li><span class="math inline">\(P(X=k)={n\choosek}p^k(1-p)^{n-k}\)</span></li><li><span class="math inline">\(X \sim B(n,p)\)</span></li></ul></li><li>几何分布<ul><li>直到第<span class="math inline">\(k\)</span>次0-1试验成功。</li><li><span class="math inline">\(P(X=k)=q^{k-1}p\)</span></li><li><span class="math inline">\(X \sim G(p)\)</span></li><li>无记忆性：<span class="math inline">\(P(\xi &gt;m+n|\xi &gt;m)=P(\xi&gt;n)\)</span></li></ul></li><li>Pascal分布（负二项分布）<ul><li><span class="math inline">\(X_r\)</span>第<spanclass="math inline">\(r\)</span>次0-1成功发生时试验次数</li><li><span class="math inline">\(P(X_r=k)={r-1 \choose k-1}p^rq^{k-r}\)</span></li></ul></li><li>Poisson分布<ul><li><span class="math inline">\(P(X=k)=\frac{\lambda^k}{k!}e^{-\lambda},\lambda&gt;0\)</span></li><li><span class="math inline">\(X\sim P(\lambda)\)</span></li><li><span class="math inline">\(n\)</span>重伯努利试验，如果<spanclass="math inline">\(np_n\rightarrow\lambda\)</span>，则当<spanclass="math inline">\(n\rightarrow\infin\)</span>，二项分布分布律趋向于Poisson分布律。</li></ul></li><li>离散均匀分布<ul><li><span class="math inline">\(P(x=a_i)=\frac{1}{n}\)</span></li></ul></li></ol><h2 id="连续型">1.2 连续型</h2><ol type="1"><li>分布函数：从负无穷积到<span class="math inline">\(x\)</span></li><li>正态分布：<ul><li><spanclass="math inline">\(f(x)=\frac{1}{\sqrt{2\pi}\sigma}exp\{-\frac{(x-\mu)^2}{2\sigma^2}\}\)</span></li></ul></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>基础课学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>The Magnetodiscs and Aurorae of Giant Planets Learning Notes</title>
+    <link href="/2023/02/12/Notes/"/>
+    <url>/2023/02/12/Notes/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>科研基础学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>理论力学期末复习</title>
     <link href="/2023/02/11/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"/>
     <url>/2023/02/11/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言">-1. 前言</h1><p>这段时间太摆，天天大颓，不补天不行了。<del>好自责呜呜呜</del></p><h1 id="前置芝士">0. 前置芝士</h1><ol type="1"><li>平面极坐标：<spanclass="math inline">\(\dot{e_r}=\dot{\theta}e_\theta\)</span>，<spanclass="math inline">\(\dot{e_\theta}=-\dot{\theta}e_r\)</span></li><li>球坐标： <spanclass="math display">\[\dot{e_r}=\dot{\theta}e_\theta+\sin \theta\dot{\phi}e_\phi\]</span></li></ol><h1 id="拉格朗日方程">1. 拉格朗日方程</h1><ol type="1"><li><p>纯滚动约束：接触点速度为 <spanclass="math inline">\(0\)</span></p></li><li><p>判断一个约束是否为完整约束：</p><p>例如：<spanclass="math inline">\(dx\sin\theta-dy\cos\theta=0\)</span></p><p>令：<spanclass="math inline">\(F=(\sin\theta,-\cos\theta,0)\)</span></p><p>之后计算<span class="math inline">\(F\cdot (\nabla\timesF)=0\)</span>则为完整约束，不为<spanclass="math inline">\(0\)</span>则为不完整约束</p></li><li><p>求解静平衡问题简便方法：势能最小原理（此时没有非保守力）</p></li><li><p>理想约束条件<spanclass="math inline">\(\rightarrow\)</span>虚功为0，即<spanclass="math inline">\(\sum R_i·\delta r_i=0\)</span>（<spanclass="math inline">\(R_i\)</span>为约束力）（我们遇到的情况就默认一波理想约束）</p></li><li><p>系统平衡：<span class="math inline">\(F_i+R_i=0\)</span> +理想约束条件<span class="math inline">\(\rightarrow\sum\limits_iF_i\cdot \delta r_i=0\)</span></p><p><span class="math inline">\(\sum\limits_j(\sum\limits_iF_i\cdot\frac{\partial r_i}{\partial q_j})\delta q_j=0\)</span></p><p>由此可以定义出广义力<span class="math inline">\(Q_j=\sum\limits_iF_i\cdot \frac{\partial r_i}{\partial q_j}\)</span></p><p>方程为：<span class="math inline">\(\sum\limits_j Q_j\deltaq_j=0\)</span></p></li><li><p>达朗贝尔原理：<span class="math inline">\(\sum (F_i-m_i\ddot{r_i})·\delta r_i=0\)</span></p></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言">-1. 前言</h1><p>这段时间太摆，天天大颓，不补天不行了。<del>好自责呜呜呜</del></p><h1 id="前置芝士">0. 前置芝士</h1><ol type="1"><li>平面极坐标：<spanclass="math inline">\(\dot{e_r}=\dot{\theta}e_\theta\)</span>，<spanclass="math inline">\(\dot{e_\theta}=-\dot{\theta}e_r\)</span></li><li>球坐标： <spanclass="math display">\[\dot{e_r}=\dot{\theta}e_\theta+\sin \theta\dot{\phi}e_\phi\]</span></li></ol><h1 id="拉格朗日方程">1. 拉格朗日方程</h1><ol type="1"><li><p>纯滚动约束：接触点速度为 <spanclass="math inline">\(0\)</span></p></li><li><p>判断一个约束是否为完整约束：</p><p>例如：<spanclass="math inline">\(dx\sin\theta-dy\cos\theta=0\)</span></p><p>令：<spanclass="math inline">\(F=(\sin\theta,-\cos\theta,0)\)</span></p><p>之后计算<span class="math inline">\(F\cdot (\nabla\timesF)=0\)</span>则为完整约束，不为<spanclass="math inline">\(0\)</span>则为不完整约束</p></li><li><p>求解静平衡问题简便方法：势能最小原理（此时没有非保守力）</p></li><li><p>理想约束条件<spanclass="math inline">\(\rightarrow\)</span>虚功为0，即<spanclass="math inline">\(\sum\limits_i R_i·\delta r_i=0\)</span>（<spanclass="math inline">\(R_i\)</span>为约束力）（我们遇到的情况就默认一波理想约束）</p></li><li><p>系统平衡：<span class="math inline">\(F_i+R_i=0\)</span> +理想约束条件<span class="math inline">\(\rightarrow\sum\limits_iF_i\cdot \delta r_i=0\)</span></p><p><span class="math inline">\(\sum\limits_j(\sum\limits_iF_i\cdot\frac{\partial r_i}{\partial q_j})\delta q_j=0\)</span></p><p>由此可以定义出广义力<span class="math inline">\(Q_j=\sum\limits_iF_i\cdot \frac{\partial r_i}{\partial q_j}\)</span></p><p>方程为：<span class="math inline">\(\sum\limits_j Q_j\deltaq_j=0\)</span></p></li><li><p>虚功原理推广到动态情况：</p><p>达朗贝尔原理： <span class="math display">\[\sum\limits_i (F_i-m_i\ddot{r_i})·\delta r_i=0\]</span> <spanclass="math display">\[Q_j=\sum\limits_i m_i\ddot{r_i}\cdot\frac{\partial r_i}{\partial q_j}\]</span></p></li><li><p><span class="math inline">\(L=T-V\)</span>（<spanclass="math inline">\(T\)</span>为系统总动能，<spanclass="math inline">\(V\)</span>为势能） 拉格朗日方程： <spanclass="math display">\[\frac{d}{dt}\frac{\partial L}{\partial\dot{q_j}}-\frac{\partial L}{\partial q_j}=0\]</span></p></li><li><p>哈密顿原理：系统演化沿着作用量最小的路径（非保守力不存在时可用）（作用量：<spanclass="math inline">\(S=\int _0^TLdt\)</span>）</p></li></ol>]]></content>
     
     
     <categories>
@@ -33,7 +83,7 @@
     <link href="/2023/02/10/Vim%E5%BE%9E%E5%85%A5%E9%96%80%E5%88%B0%E5%85%A5%E5%9C%9F/"/>
     <url>/2023/02/10/Vim%E5%BE%9E%E5%85%A5%E9%96%80%E5%88%B0%E5%85%A5%E5%9C%9F/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言">前言</h1><p>被push学学vim，记录一下学习的过程，争取能学下来（好难啊，<del>什么阴间玩意</del>）</p><h1 id="前置芝士wsl">前置芝士——WSL</h1><p>不想用辣鸡虚拟机，不想用学校的vlab，不想放弃windows……</p><p>那就用Windows Subsystem for Linux！</p><p>听说win11可以自带linux软件的GUI界面炒鸡香，果断更新。</p><h2 id="需要记住的指令"><strong>需要记住的指令</strong></h2><ol type="1"><li>进入WSL（from Powershell） &gt; wsl</li><li>查看WSL状态 &gt; wsl -l -v</li><li>WSL关机 &gt; wsl --shutdown</li><li>从WSL返回到Powershell &gt; exit</li></ol><h1 id="vim">Vim</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言">前言</h1><p>被push学学vim，记录一下学习的过程，争取能学下来（好难啊，<del>什么阴间玩意</del>）</p><h1 id="前置芝士wsl">前置芝士——WSL</h1><p>不想用辣鸡虚拟机，不想用学校的vlab，不想放弃windows……</p><p>那就用Windows Subsystem for Linux！</p><p>听说win11可以自带linux软件的GUI界面炒鸡香，果断更新。</p><h2 id="需要记住的指令"><strong>需要记住的指令</strong></h2><ol type="1"><li><p>进入WSL（from Powershell）</p><blockquote><p>wsl</p></blockquote></li><li><p>查看WSL状态</p><blockquote><p>wsl -l -v</p></blockquote></li><li><p>WSL关机</p><blockquote><p>wsl --shutdown</p></blockquote></li><li><p>从WSL返回到Powershell</p><blockquote><p>exit</p></blockquote></li></ol><h1 id="vim">Vim</h1>]]></content>
     
     
     <categories>
