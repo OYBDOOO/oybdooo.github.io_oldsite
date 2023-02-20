@@ -24,7 +24,7 @@
 <meta property="og:description" content="-1. 前言 这段时间太摆，天天大颓，不补天不行了。好自责呜呜呜 0. 前置芝士  平面极坐标：\(\dot{e_r}&#x3D;\dot{\theta}e_\theta\)，\(\dot{e_\theta}&#x3D;-\dot{\theta}e_r\) 球坐标： \[\dot{e_r}&#x3D;\dot{\theta}e_\theta+\sin \theta \dot{\phi}e_\phi\]  1.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-11T11:14:56.000Z">
-<meta property="article:modified_time" content="2023-02-14T11:40:47.518Z">
+<meta property="article:modified_time" content="2023-02-16T16:27:43.313Z">
 <meta property="article:author" content="OYBDOOO">
 <meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary_large_image">
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k 字
+          2.4k 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          14 分钟
+          20 分钟
         
       </span>
     
@@ -384,6 +384,57 @@ class="math inline">\(\frac{dH}{dt}=0\)</span></li>
 <li>稳定约束（不含<span
 class="math inline">\(t\)</span>）此时广义能量守恒即为机械能守恒。不稳定的时候则不好使。</li>
 </ul></li>
+</ol>
+<h1 id="拉格朗日方程的应用">2. 拉格朗日方程的应用</h1>
+<ol type="1">
+<li>两体碰撞问题
+<ul>
+<li>设位置<span
+class="math inline">\(r_1,r_2,r=r_2-r_1,r_c=\frac{m_1r_1+m_2r_2}{m_1+m_2}\)</span></li>
+<li>定义：<span
+class="math inline">\(\mu=\frac{m_1m_2}{m_1+m_2}\)</span>为<strong>约化质量</strong>
+<ul>
+<li><span
+class="math inline">\(r_1=r_c-\frac{\mu}{m_1}r,r_2=r_c+\frac{\mu}{m_2}r\)</span></li>
+<li>拉格朗日函数：<span
+class="math inline">\(L=\frac{1}{2}m_1\dot{r_1}^2+\frac{1}{2}m_2\dot{r_2}^2-V(r)=\frac{1}{2}(m_1+m_2)\dot{r_c}^2+\frac{1}{2}\mu\dot{r}^2-V(r)\)</span>，这就可以分解为一个<span
+class="math inline">\((m_1+m_2),v_c\)</span>的自由质点，和质量<span
+class="math inline">\(\mu\)</span>，势能<span
+class="math inline">\(V(r)\)</span>的运动粒子</li>
+</ul></li>
+<li>牛顿三：相互作用沿着<span
+class="math inline">\(r\)</span>方向，所以<span
+class="math inline">\(V(r)\)</span>产生的作用力是有心力
+<ul>
+<li>有心力作用，力矩为<span
+class="math inline">\(0\)</span>，由角动量<span
+class="math inline">\(J=r\times
+mv\)</span>守恒，强制规定角动量方向为<span
+class="math inline">\(z\)</span>轴，限值质点在<span
+class="math inline">\(xy\)</span>平面</li>
+<li>原点取为力心消灭<span
+class="math inline">\(V(r)\)</span>的方向，<span
+class="math inline">\(V(r)\)</span>与<span
+class="math inline">\(\theta\)</span>无关</li>
+</ul></li>
+<li>约化质量质点：<span
+class="math inline">\(L=\frac{1}{2}\mu(\dot{r}^2+r^2\dot{\theta}^2)-V(r)\)</span>
+<ul>
+<li>拉格朗日方程：
+<ul>
+<li><span class="math inline">\(\frac{d}{dt}\mu\dot{r}=\mu
+r\dot{\theta}^2-\frac{dV(r)}{dr}\)</span></li>
+<li><span class="math inline">\(\frac{d}{dt}\mu
+r^2\dot{\theta}=0\)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>微振动</li>
+</ol>
+<h1 id="刚体力学">4. 刚体力学</h1>
+<ol type="1">
+<li>刚体概念：有形状，有大小，有质量分布，在受力时，不发生任何形变</li>
+<li>本体坐标：固定在刚体上的坐标系，随刚体移动</li>
 </ol>
 
                 
