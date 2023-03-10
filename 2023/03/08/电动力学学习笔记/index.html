@@ -16,16 +16,16 @@
   <meta name="author" content="OYBDOOO">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1. 数学基础 1.1 向量分析  爱因斯坦求和约定：\(\mathbf{A}\cdot \mathbf{B}&#x3D;\sum A_iB_i&#x3D;A_iB_i\)  例子：\(\frac{\partial x_i}{\partial x_i}&#x3D;3\)（求和的含义）  \(\delta_{ij}&#x3D;\begin{cases}1&amp; i&#x3D;j\\ 0&amp;i\neq j\end{cas">
+    <meta name="description" content="1. 数学基础 1.1 向量分析  向量定义：在坐标系变换的时候，其转换方式与位移矢量一致 爱因斯坦求和约定：\(\mathbf{A}\cdot \mathbf{B}&#x3D;\sum A_iB_i&#x3D;A_iB_i\)  例子：\(\frac{\partial x_i}{\partial x_i}&#x3D;3\)（求和的含义）  \(\delta_{ij}&#x3D;\begin{cases}1&amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="电动力学学习笔记">
 <meta property="og:url" content="https://oybdooo.github.io/2023/03/08/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="OYBDOOO">
-<meta property="og:description" content="1. 数学基础 1.1 向量分析  爱因斯坦求和约定：\(\mathbf{A}\cdot \mathbf{B}&#x3D;\sum A_iB_i&#x3D;A_iB_i\)  例子：\(\frac{\partial x_i}{\partial x_i}&#x3D;3\)（求和的含义）  \(\delta_{ij}&#x3D;\begin{cases}1&amp; i&#x3D;j\\ 0&amp;i\neq j\end{cas">
+<meta property="og:description" content="1. 数学基础 1.1 向量分析  向量定义：在坐标系变换的时候，其转换方式与位移矢量一致 爱因斯坦求和约定：\(\mathbf{A}\cdot \mathbf{B}&#x3D;\sum A_iB_i&#x3D;A_iB_i\)  例子：\(\frac{\partial x_i}{\partial x_i}&#x3D;3\)（求和的含义）  \(\delta_{ij}&#x3D;\begin{cases}1&amp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://oybdooo.github.io/2023/03/08/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/1.jpg">
 <meta property="article:published_time" content="2023-03-07T16:02:50.000Z">
-<meta property="article:modified_time" content="2023-03-08T11:58:14.088Z">
+<meta property="article:modified_time" content="2023-03-10T06:29:12.331Z">
 <meta property="article:author" content="OYBDOOO">
 <meta property="article:tag" content="简体中文">
 <meta property="article:tag" content="电动力学">
@@ -239,7 +239,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          635 字
+          1.2k 字
         
       </span>
     
@@ -250,7 +250,7 @@
         
         
         
-          6 分钟
+          10 分钟
         
       </span>
     
@@ -304,6 +304,7 @@
                 <h1 id="数学基础">1. 数学基础</h1>
 <h2 id="向量分析">1.1 向量分析</h2>
 <ol type="1">
+<li>向量定义：在坐标系变换的时候，其转换方式与位移矢量一致</li>
 <li>爱因斯坦求和约定：<span class="math inline">\(\mathbf{A}\cdot
 \mathbf{B}=\sum A_iB_i=A_iB_i\)</span>
 <ul>
@@ -347,9 +348,35 @@ A}\)</span></li>
 </div></li>
 </ul></li>
 </ul></li>
-</ol>
-<h1 id="参考文献">参考文献</h1>
+<li><span class="math inline">\(\nabla\)</span>的向量属性：
+<ul>
+<li><span class="math inline">\(\nabla\times\nabla f=0\)</span></li>
+<li><span class="math inline">\(\nabla\cdot\nabla\times
+\mathbf{A}=0\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\nabla\)</span>的微分属性：
+<ul>
+<li><span class="math inline">\(\nabla(fg)=g\nabla f+f\nabla
+g\)</span></li>
+<li><span
+class="math inline">\(\nabla\cdot(f\mathbf{A})=f\nabla\cdot\mathbf{A}+\nabla
+f\cdot\mathbf{A}\)</span></li>
+<li><span class="math inline">\(\nabla \times
+(f\mathbf{A})=f\nabla\times\mathbf{A}+\nabla
+f\times\mathbf{A}\)</span></li>
+</ul></li>
+<li>重点讨论：<span class="math inline">\(\nabla\times(\mathbf{A\times
+B})\neq\mathbf{A}(\nabla\cdot\mathbf{B})-\mathbf{B}(\nabla\cdot\mathbf{A})\)</span>（先中间后两边）
 <ol type="1">
+<li>下标法
+<ul>
+<li><span class="math inline">\(\nabla\times(\mathbf{A\times
+B})=\nabla_{A}\times(\mathbf{A\times B})+\nabla_B\times(\mathbf{A\times
+B})\)</span> （带下角标表示只作用于<span
+class="math inline">\(A/B\)</span>）</li>
+<li><h1 id="参考文献">参考文献</h1></li>
+</ul></li>
+</ol></li>
 <li>陶鑫《电动力学讲义》</li>
 </ol>
 

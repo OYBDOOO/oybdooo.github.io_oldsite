@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>地球系统科学导论——行星空间学习笔记</title>
+    <link href="/2023/03/10/%E5%9C%B0%E7%90%83%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%AE%BA%E2%80%94%E2%80%94%E8%A1%8C%E6%98%9F%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <url>/2023/03/10/%E5%9C%B0%E7%90%83%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%AE%BA%E2%80%94%E2%80%94%E8%A1%8C%E6%98%9F%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>FORTRAN基础</title>
     <link href="/2023/03/08/FORTRAN%E5%9F%BA%E7%A1%80/"/>
     <url>/2023/03/08/FORTRAN%E5%9F%BA%E7%A1%80/</url>
@@ -21,7 +34,7 @@
     <link href="/2023/03/08/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <url>/2023/03/08/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     
-    <content type="html"><![CDATA[<h1 id="数学基础">1. 数学基础</h1><h2 id="向量分析">1.1 向量分析</h2><ol type="1"><li>爱因斯坦求和约定：<span class="math inline">\(\mathbf{A}\cdot\mathbf{B}=\sum A_iB_i=A_iB_i\)</span><ul><li>例子：<span class="math inline">\(\frac{\partial x_i}{\partialx_i}=3\)</span>（求和的含义）</li></ul></li><li><span class="math inline">\(\delta_{ij}=\begin{cases}1&amp; i=j\\0&amp;i\neq j\end{cases}\)</span></li><li><span class="math inline">\(\epsilon_{ijk}=\begin{cases}+1 &amp;\text{i,j,k为1,2,3的偶数次置换}\\-1 &amp;\text{i,j,k为1,2,3的奇数次置换}\\0&amp;\text{其他情况}\end{cases}\)</span><ul><li><span class="math inline">\(\mathbf{A}\times\mathbf{B}=\epsilon_{ijk}\mathbf{e}_i A_j B_k\)</span></li><li><spanclass="math inline">\(\epsilon_{ijk}\epsilon_{imn}=\delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km}\)</span></li></ul></li></ol><h2 id="向量运算技巧">1.2 向量运算技巧</h2><ol type="1"><li><span class="math inline">\(\mathbf{A\cdot B\times C}\)</span><ul><li>可以交换点乘叉乘顺序：<ul><li><span class="math inline">\(\mathbf{A\cdot B\times C=A\times B\cdotC}\)</span></li></ul></li><li>可以循环向量<ul><li><span class="math inline">\(\mathbf{A\cdot B\times C=B\cdot C\timesA}\)</span></li></ul></li></ul></li><li><span class="math inline">\(\mathbf{(A\times B)\times C}\)</span><ul><li>先中间后外面法：<ul><li><div style="width:50%;margin:auto"><img src="/2023/03/08/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/1.jpg" class="" title="pic1"></div></li></ul></li></ul></li></ol><h1 id="参考文献">参考文献</h1><ol type="1"><li>陶鑫《电动力学讲义》</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="数学基础">1. 数学基础</h1><h2 id="向量分析">1.1 向量分析</h2><ol type="1"><li>向量定义：在坐标系变换的时候，其转换方式与位移矢量一致</li><li>爱因斯坦求和约定：<span class="math inline">\(\mathbf{A}\cdot\mathbf{B}=\sum A_iB_i=A_iB_i\)</span><ul><li>例子：<span class="math inline">\(\frac{\partial x_i}{\partialx_i}=3\)</span>（求和的含义）</li></ul></li><li><span class="math inline">\(\delta_{ij}=\begin{cases}1&amp; i=j\\0&amp;i\neq j\end{cases}\)</span></li><li><span class="math inline">\(\epsilon_{ijk}=\begin{cases}+1 &amp;\text{i,j,k为1,2,3的偶数次置换}\\-1 &amp;\text{i,j,k为1,2,3的奇数次置换}\\0&amp;\text{其他情况}\end{cases}\)</span><ul><li><span class="math inline">\(\mathbf{A}\times\mathbf{B}=\epsilon_{ijk}\mathbf{e}_i A_j B_k\)</span></li><li><spanclass="math inline">\(\epsilon_{ijk}\epsilon_{imn}=\delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km}\)</span></li></ul></li></ol><h2 id="向量运算技巧">1.2 向量运算技巧</h2><ol type="1"><li><span class="math inline">\(\mathbf{A\cdot B\times C}\)</span><ul><li>可以交换点乘叉乘顺序：<ul><li><span class="math inline">\(\mathbf{A\cdot B\times C=A\times B\cdotC}\)</span></li></ul></li><li>可以循环向量<ul><li><span class="math inline">\(\mathbf{A\cdot B\times C=B\cdot C\timesA}\)</span></li></ul></li></ul></li><li><span class="math inline">\(\mathbf{(A\times B)\times C}\)</span><ul><li>先中间后外面法：<ul><li><div style="width:50%;margin:auto"><img src="/2023/03/08/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/1.jpg" class="" title="pic1"></div></li></ul></li></ul></li><li><span class="math inline">\(\nabla\)</span>的向量属性：<ul><li><span class="math inline">\(\nabla\times\nabla f=0\)</span></li><li><span class="math inline">\(\nabla\cdot\nabla\times\mathbf{A}=0\)</span></li></ul></li><li><span class="math inline">\(\nabla\)</span>的微分属性：<ul><li><span class="math inline">\(\nabla(fg)=g\nabla f+f\nablag\)</span></li><li><spanclass="math inline">\(\nabla\cdot(f\mathbf{A})=f\nabla\cdot\mathbf{A}+\nablaf\cdot\mathbf{A}\)</span></li><li><span class="math inline">\(\nabla \times(f\mathbf{A})=f\nabla\times\mathbf{A}+\nablaf\times\mathbf{A}\)</span></li></ul></li><li>重点讨论：<span class="math inline">\(\nabla\times(\mathbf{A\timesB})\neq\mathbf{A}(\nabla\cdot\mathbf{B})-\mathbf{B}(\nabla\cdot\mathbf{A})\)</span>（先中间后两边）<ol type="1"><li>下标法<ul><li><span class="math inline">\(\nabla\times(\mathbf{A\timesB})=\nabla_{A}\times(\mathbf{A\times B})+\nabla_B\times(\mathbf{A\timesB})\)</span> （带下角标表示只作用于<spanclass="math inline">\(A/B\)</span>）</li><li><h1 id="参考文献">参考文献</h1></li></ul></li></ol></li><li>陶鑫《电动力学讲义》</li></ol>]]></content>
     
     
     <categories>
@@ -48,9 +61,23 @@
     <link href="/2023/03/08/%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <url>/2023/03/08/%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="偏微分方程中的定解问题">1. 偏微分方程中的定解问题</h1><ol type="1"><li>偏微分方程：<span class="math inline">\(F(x,u,\frac{\partialu}{\partial x_i},\dots,\frac{\partial^m u}{\partialx_1^{m_1}\dots\partial x_n^{m_n}})=0\)</span><ul><li><spanclass="math inline">\(x=(x_{1:n}),u=u(x)\text{为未知函数},m=\summ_i\text{为方程的阶}\)</span></li></ul></li><li>线性偏微分方程<ul><li>偏微分方程，<span class="math inline">\(u\)</span>和<spanclass="math inline">\(u\)</span>的偏导数为在方程中为线性组合，称为线性偏微分方程</li><li><span class="math inline">\(f(x)+\sum\limits_{|\alpha|\leqm}a_\alpha(x)D^\alpha u+f(x)=0\)</span></li><li></li></ul></li></ol>]]></content>
     
     
+    <categories>
+      
+      <category>Science Study</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>简体中文</tag>
+      
+      <tag>数学物理方程</tag>
+      
+    </tags>
     
   </entry>
   
