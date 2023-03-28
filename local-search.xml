@@ -30,60 +30,6 @@
   
   
   <entry>
-    <title>电动力学学习笔记</title>
-    <link href="/2023/03/08/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <url>/2023/03/08/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    
-    <content type="html"><![CDATA[<h1 id="数学基础">1. 数学基础</h1><h2 id="向量分析">1.1 向量分析</h2><ol type="1"><li>向量定义：在坐标系变换的时候，其转换方式与位移矢量一致</li><li>爱因斯坦求和约定：<span class="math inline">\(\mathbf{A}\cdot\mathbf{B}=\sum A_iB_i=A_iB_i\)</span><ul><li>例子：<span class="math inline">\(\frac{\partial x_i}{\partialx_i}=3\)</span>（求和的含义）</li></ul></li><li><span class="math inline">\(\delta_{ij}=\begin{cases}1&amp; i=j\\0&amp;i\neq j\end{cases}\)</span></li><li><span class="math inline">\(\epsilon_{ijk}=\begin{cases}+1 &amp;\text{i,j,k为1,2,3的偶数次置换}\\-1 &amp;\text{i,j,k为1,2,3的奇数次置换}\\0&amp;\text{其他情况}\end{cases}\)</span><ul><li><span class="math inline">\(\mathbf{A}\times\mathbf{B}=\epsilon_{ijk}\mathbf{e}_i A_j B_k\)</span></li><li><spanclass="math inline">\(\epsilon_{ijk}\epsilon_{imn}=\delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km}\)</span></li></ul></li></ol><h2 id="向量运算技巧">1.2 向量运算技巧</h2><ol type="1"><li><span class="math inline">\(\mathbf{A\cdot B\times C}\)</span><ul><li>可以交换点乘叉乘顺序：<ul><li><span class="math inline">\(\mathbf{A\cdot B\times C=A\times B\cdotC}\)</span></li></ul></li><li>可以循环向量<ul><li><span class="math inline">\(\mathbf{A\cdot B\times C=B\cdot C\timesA}\)</span></li></ul></li></ul></li><li><span class="math inline">\(\mathbf{(A\times B)\times C}\)</span><ul><li>先中间后外面法：<ul><li><div style="width:50%;margin:auto"><img src="/2023/03/08/%E7%94%B5%E5%8A%A8%E5%8A%9B%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/1.jpg" class="" title="pic1"></div></li></ul></li></ul></li><li><span class="math inline">\(\nabla\)</span>的向量属性：<ul><li><span class="math inline">\(\nabla\times\nabla f=0\)</span></li><li><span class="math inline">\(\nabla\cdot\nabla\times\mathbf{A}=0\)</span></li></ul></li><li><span class="math inline">\(\nabla\)</span>的微分属性：<ul><li><span class="math inline">\(\nabla(fg)=g\nabla f+f\nablag\)</span></li><li><spanclass="math inline">\(\nabla\cdot(f\mathbf{A})=f\nabla\cdot\mathbf{A}+\nablaf\cdot\mathbf{A}\)</span></li><li><span class="math inline">\(\nabla \times(f\mathbf{A})=f\nabla\times\mathbf{A}+\nablaf\times\mathbf{A}\)</span></li></ul></li><li>重点讨论：<span class="math inline">\(\nabla\times(\mathbf{A\timesB})\neq\mathbf{A}(\nabla\cdot\mathbf{B})-\mathbf{B}(\nabla\cdot\mathbf{A})\)</span>（先中间后两边）<ol type="1"><li>下标法<ul><li><span class="math inline">\(\nabla\times(\mathbf{A\timesB})=\nabla_{A}\times(\mathbf{A\times B})+\nabla_B\times(\mathbf{A\timesB})\)</span> （带下角标表示只作用于<spanclass="math inline">\(A/B\)</span>）</li><li><h1 id="参考文献">参考文献</h1></li></ul></li></ol></li><li>陶鑫《电动力学讲义》</li></ol>]]></content>
-    
-    
-    <categories>
-      
-      <category>Science Study</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>简体中文</tag>
-      
-      <tag>电动力学</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>数学物理方程学习笔记</title>
-    <link href="/2023/03/08/%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <url>/2023/03/08/%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E6%96%B9%E7%A8%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    
-    <content type="html"><![CDATA[<h1 id="偏微分方程中的定解问题">1. 偏微分方程中的定解问题</h1><ol type="1"><li>偏微分方程：<span class="math inline">\(F(x,u,\frac{\partialu}{\partial x_i},\dots,\frac{\partial^m u}{\partialx_1^{m_1}\dots\partial x_n^{m_n}})=0\)</span><ul><li><spanclass="math inline">\(x=(x_{1:n}),u=u(x)\text{为未知函数},m=\summ_i\text{为方程的阶}\)</span></li></ul></li><li>线性偏微分方程<ul><li>偏微分方程，<span class="math inline">\(u\)</span>和<spanclass="math inline">\(u\)</span>的偏导数为在方程中为线性组合，称为线性偏微分方程</li><li><span class="math inline">\(f(x)+\sum\limits_{|\alpha|\leqm}a_\alpha(x)D^\alpha u+f(x)=0\)</span></li><li></li></ul></li></ol>]]></content>
-    
-    
-    <categories>
-      
-      <category>Science Study</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>简体中文</tag>
-      
-      <tag>数学物理方程</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>粵語從入門到入土</title>
     <link href="/2023/03/05/%E7%B2%B5%E8%AA%9E%E5%BE%9E%E5%85%A5%E9%96%80%E5%88%B0%E5%85%A5%E5%9C%9F/"/>
     <url>/2023/03/05/%E7%B2%B5%E8%AA%9E%E5%BE%9E%E5%85%A5%E9%96%80%E5%88%B0%E5%85%A5%E5%9C%9F/</url>
@@ -113,7 +59,7 @@
     <link href="/2023/03/04/%E5%8D%A0%E6%98%9F%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
     <url>/2023/03/04/%E5%8D%A0%E6%98%9F%E5%AD%A6%E5%9F%BA%E7%A1%80/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言">0.前言</h1><p>随便看着学学。</p><h1 id="基本原则">1. 基本原则</h1><ul><li>占星学的七大原则<ol type="1"><li>占星符号都是中性的，没有好的，也没有坏的。</li><li>每个人应该为自己如何去体现自己的星盘而负责。</li><li>没有一个占星师能够仅仅通过星盘来判定一个人会如何地展现他的星盘。</li><li>星盘是一个人可能达到的最快乐、最满足、最灵性、最富有创造性的成长之路的蓝图。</li><li>所有对这个理想成长模式的偏离都是不稳定状态，通常都会带来一种无目的感、空虚、以及焦虑。</li><li>占星学里只有两点是绝对的：生命本身所拥有的不可去除的神秘性；以及每个个体对这种神秘性的独特看法。</li><li>当占星学跟任何一种哲学或者宗教结合得太紧密时，它就受到了损害。在占星学系统中，除了一个人的自我意识，没有什么是真正重要的。</li></ol></li></ul><h1 id="象征语言">2. 象征语言</h1><ul><li>星座、宫位、行星<ol type="1"><li>星座：身份。提供心理的构架，需要和恐惧，态度和偏好，来展现在宫位中。代表在心识里发生的过程。“什么”</li><li>宫位：身份运作的场所。代表问题和事件，是我们必须面对的任务。代表心识所观察到的内容。“为什么/怎样”</li><li>行星：代表心识的真正结构。每一颗行星都代表了一种心理功能：心智、情绪、自我形象、想要亲密的冲动。“哪里”</li></ol></li></ul><h1 id="参考文献">2.参考文献</h1><blockquote><p>《内在的天空》——斯蒂芬·福里斯特</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言">0.前言</h1><p>随便看着学学。</p><h1 id="基本原则">1. 基本原则</h1><ul><li>占星学的七大原则<ol type="1"><li>占星符号都是中性的，没有好的，也没有坏的。</li><li>每个人应该为自己如何去体现自己的星盘而负责。</li><li>没有一个占星师能够仅仅通过星盘来判定一个人会如何地展现他的星盘。</li><li>星盘是一个人可能达到的最快乐、最满足、最灵性、最富有创造性的成长之路的蓝图。</li><li>所有对这个理想成长模式的偏离都是不稳定状态，通常都会带来一种无目的感、空虚、以及焦虑。</li><li>占星学里只有两点是绝对的：生命本身所拥有的不可去除的神秘性；以及每个个体对这种神秘性的独特看法。</li><li>当占星学跟任何一种哲学或者宗教结合得太紧密时，它就受到了损害。在占星学系统中，除了一个人的自我意识，没有什么是真正重要的。</li></ol></li></ul><h1 id="象征语言">2. 象征语言</h1><ul><li>星座、宫位、行星<ol type="1"><li>星座：身份。提供心理的构架，需要和恐惧，态度和偏好，来展现在宫位中。代表在心识里发生的过程。“什么”</li><li>宫位：身份运作的场所。代表问题和事件，是我们必须面对的任务。代表心识所观察到的内容。“为什么/怎样”</li><li>行星：代表心识的真正结构。每一颗行星都代表了一种心理功能：心智、情绪、自我形象、想要亲密的冲动。“哪里”</li></ol></li></ul><h1 id="星盘">3. 星盘</h1><ul><li>星座、宫位和行星的独特排列形式。</li><li>显示一个人出生的时候太阳、月亮、行星在天空中位置。</li><li>图像字符<ul><li><img src="\占星学基础\1.jpg" /></li></ul></li></ul><h1 id="参考文献">2.参考文献</h1><blockquote><p>《内在的天空》——斯蒂芬·福里斯特</p></blockquote>]]></content>
     
     
     <categories>
@@ -369,7 +315,7 @@
     <link href="/2022/12/14/%E6%96%87%E7%8C%AE%E5%B8%B8%E7%94%A8%E8%AF%8D%E6%B1%87/"/>
     <url>/2022/12/14/%E6%96%87%E7%8C%AE%E5%B8%B8%E7%94%A8%E8%AF%8D%E6%B1%87/</url>
     
-    <content type="html"><![CDATA[<h1 id="a">A</h1><ol type="1"><li>adjacent 相邻的</li><li>arbitrary 任意的</li><li>attributable 可能由于……的</li><li>axisymmetric 轴对称的</li></ol><h1 id="b">B</h1><ol type="1"><li>bulk 显得大</li></ol><h1 id="c">C</h1><ol type="1"><li>calibration 刻度，校准</li><li>cohesive 有结合力的</li><li>constituent 成分</li><li>convective 对流的</li><li>cororate 同步旋转</li></ol><h1 id="d">D</h1><ol type="1"><li>dense 浓密的</li><li>discrete 不连续的</li><li>disperse 分散</li><li>distribution分布</li><li>dominate 控制</li><li>drift 漂移</li><li>dynamo 发电机</li></ol><h1 id="e">E</h1><ol type="1"><li>electromagnetic 电磁的</li><li>embed 嵌入</li><li>evolve 逐渐形成</li><li>exert 施加</li><li>exosphere 外逸层（大气分层）</li></ol><h1 id="f">F</h1><ol type="1"><li>flux 流出</li></ol><h1 id="g">G</h1><ol type="1"><li>gradient 梯度</li></ol><h1 id="i">I</h1><ol type="1"><li>interval 间隔</li><li>intensity 强度</li><li>ion 离子</li><li>ionosphere 电离层</li></ol><h1 id="j">J</h1><ol type="1"><li>jovian 木星的</li></ol><h1 id="k">K</h1><ol type="1"><li>kinetic 运动的</li></ol><h1 id="l">L</h1><ol type="1"><li>latitude 纬度</li></ol><h1 id="m">M</h1><ol type="1"><li>magnet 磁体</li><li>magnetic declination 磁偏角</li><li>magnetic inclination 磁倾角</li><li>magnetopause 磁层顶</li><li>magnetosheath 磁鞘</li><li>magnetosphere 磁层</li><li>magnetotail 磁尾</li><li>mesosphere 中间层（大气分层）</li><li>meteoroid 流星体</li><li>momentum 动量</li></ol><h1 id="o">O</h1><ol type="1"><li>onset 开始</li><li>orientation 方向</li></ol><h1 id="p">P</h1><ol type="1"><li>particulate 粒子的</li><li>periodic 周期的</li><li>perpendicular 垂直</li><li>photoionization 光致电离</li><li>plasmoid 等离子体团</li><li>polar cap 极盖区</li></ol><h1 id="r">R</h1><ol type="1"><li>radii 半径</li><li>ratio 比率</li><li>regime 体制</li><li>remanent 剩余的</li><li>reveal 揭露</li></ol><h1 id="s">S</h1><ol type="1"><li>shed 流出</li><li>simultaneously 同时发生</li><li>solenoidal field 无散场</li><li>spectrum 光谱</li><li>stratification 分层</li><li>supersonic 超音速的</li><li>superstition 迷信</li></ol><h1 id="t">T</h1><ol type="1"><li>tenuous 脆弱的、稀薄的</li><li>terminate 结束</li><li>terrestrial 类地的</li><li>thereafter 之后</li><li>thermosphere 热层（大气分层）</li><li>tilt 倾斜</li><li>torus 环面</li><li>trajectory 轨道</li><li>transient 瞬变</li><li>tremendous 极大的，了不起的</li></ol><h1 id="u">U</h1><ol type="1"><li>ultimately 最终</li><li>underlying下层的</li></ol><h1 id="v">V</h1><ol type="1"><li>variation 变体</li><li>vast 大量的</li><li>vertical 竖直的</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="a">A</h1><ol type="1"><li>adjacent 相邻的</li><li>anisotropy 各向异性</li><li>arbitrary 任意的</li><li>attributable 可能由于……的</li><li>axisymmetric 轴对称的</li></ol><h1 id="b">B</h1><ol type="1"><li>bulk 显得大</li></ol><h1 id="c">C</h1><ol type="1"><li>calibration 刻度，校准</li><li>cohesive 有结合力的</li><li>constituent 成分</li><li>convective 对流的</li><li>cororate 同步旋转</li></ol><h1 id="d">D</h1><ol type="1"><li>dense 浓密的</li><li>devoid 缺乏</li><li>discrete 不连续的</li><li>disperse 分散</li><li>distribution分布</li><li>dominate 控制</li><li>drift 漂移</li><li>dynamo 发电机</li></ol><h1 id="e">E</h1><ol type="1"><li>electromagnetic 电磁的</li><li>embed 嵌入</li><li>evolve 逐渐形成</li><li>exert 施加</li><li>exosphere 外逸层（大气分层）</li></ol><h1 id="f">F</h1><ol type="1"><li>flux 流出</li></ol><h1 id="g">G</h1><ol type="1"><li>gradient 梯度</li></ol><h1 id="i">I</h1><ol type="1"><li>interval 间隔</li><li>intensity 强度</li><li>intrinsic 固有的</li><li>ion 离子</li><li>ionosphere 电离层</li></ol><h1 id="j">J</h1><ol type="1"><li>jovian 木星的</li></ol><h1 id="k">K</h1><ol type="1"><li>kinetic 运动的</li></ol><h1 id="l">L</h1><ol type="1"><li>latitude 纬度</li></ol><h1 id="m">M</h1><ol type="1"><li>magnet 磁体</li><li>magnetic declination 磁偏角</li><li>magnetic inclination 磁倾角</li><li>magnetopause 磁层顶</li><li>magnetosheath 磁鞘</li><li>magnetosphere 磁层</li><li>magnetotail 磁尾</li><li>mesosphere 中间层（大气分层）</li><li>meteoroid 流星体</li><li>momentum 动量</li></ol><h1 id="o">O</h1><ol type="1"><li>onset 开始</li><li>orientation 方向</li></ol><h1 id="p">P</h1><ol type="1"><li>particulate 粒子的</li><li>periodic 周期的</li><li>perpendicular 垂直</li><li>photoionization 光致电离</li><li>plasmoid 等离子体团</li><li>polar cap 极盖区</li><li>prevail 流行的</li><li>prominent 突出的，重要的</li></ol><h1 id="r">R</h1><ol type="1"><li>radii 半径</li><li>ratio 比率</li><li>regime 体制</li><li>remanent 剩余的</li><li>reveal 揭露</li></ol><h1 id="s">S</h1><ol type="1"><li>shed 流出</li><li>simultaneously 同时发生</li><li>solenoidal field 无散场</li><li>spectrum 光谱</li><li>spin 快速旋转</li><li>stochastic 随机的</li><li>stratification 分层</li><li>supersonic 超音速的</li><li>superstition 迷信</li></ol><h1 id="t">T</h1><ol type="1"><li>tenuous 脆弱的、稀薄的</li><li>terminate 结束</li><li>terrestrial 类地的</li><li>thereafter 之后</li><li>thermosphere 热层（大气分层）</li><li>tilt 倾斜</li><li>torus 环面</li><li>trajectory 轨道</li><li>transient 瞬变</li><li>tremendous 极大的，了不起的</li></ol><h1 id="u">U</h1><ol type="1"><li>ultimately 最终</li><li>underlying下层的</li></ol><h1 id="v">V</h1><ol type="1"><li>variation 变体</li><li>vast 大量的</li><li>vertical 竖直的</li><li>viscous 粘性的</li></ol>]]></content>
     
     
     <categories>
