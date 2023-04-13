@@ -4,13 +4,31 @@
   
   
   <entry>
-    <title>地球系统科学导论——行星空间学习笔记</title>
+    <title>地球系统科学导论（行星空间）学习笔记</title>
     <link href="/2023/03/10/%E5%9C%B0%E7%90%83%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%AE%BA%E2%80%94%E2%80%94%E8%A1%8C%E6%98%9F%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <url>/2023/03/10/%E5%9C%B0%E7%90%83%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6%E5%AF%BC%E8%AE%BA%E2%80%94%E2%80%94%E8%A1%8C%E6%98%9F%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="一太阳">一、太阳</h1><ol type="1"><li>基本概念（应该背下来）<ul><li>太阳年龄：<span class="math inline">\(4.57\times 10^9\y\)</span></li><li>太阳半径：<span class="math inline">\(695990\km=109R_{\oplus}\)</span>（<spanclass="math inline">\(\oplus\)</span>：地球）</li><li>太阳质量：<span class="math inline">\(1.989\times 10^{33}\ gm=333000R_{\oplus}\)</span></li><li>中心温度：<span class="math inline">\(15600000\ K\)</span></li><li>日核密度：<span class="math inline">\(150\g/cm^3=8\rho_{gold}\)</span></li><li>日核成分：<span class="math inline">\(35\%\ H,63\% \ He,2\%\Others\)</span>（按质量计）</li><li>表面成分：<span class="math inline">\(70\%\ H,28\% \ He,2\%\Others\)</span>（按质量计）</li><li>表面温度：<span class="math inline">\(5770\ K\)</span></li><li>表面密度：<span class="math inline">\(2.07\times 10^{-7}\g/cm^3=1.6\times 10^{-4} \rho_{air}\)</span></li></ul></li><li>能量来源：核聚变<ul><li>pp反应</li><li>CNO循环反应</li></ul></li><li>内部结构（由内向外）<ul><li><strong>日核</strong>：核聚变的场所</li><li><strong>辐射区</strong>：能量通过热辐射向外传播</li><li><strong>对流区</strong>：能量通过对流运动向外传播</li><li>能量由内向外传输，所以由内向外温度逐渐减低，密度逐渐减小</li></ul></li><li>大气结构（由内向外）<ul><li>温度密度变化：在过渡区，温度快速上升，密度快速降低<ul><li><div style="width:50%;margin:auto"></div></li></ul></li><li><strong>光球层</strong><ul><li>肉眼可见，地球上<spanclass="math inline">\(99\%\)</span>的可见光和红外辐射的源头</li><li>只有几百公里厚度</li><li>临边昏暗<ul><li>现象：太阳圆面的亮度从中心向边缘逐渐暗弱</li><li>原因：</li></ul></li><li>太阳黑子</li><li>米粒组织</li><li>超米粒组织</li></ul></li></ul></li></ol>]]></content>
     
     
+    <categories>
+      
+      <category>Science</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>简体中文</tag>
+      
+      <tag>Space Science</tag>
+      
+      <tag>Planetery Science</tag>
+      
+      <tag>Study</tag>
+      
+    </tags>
     
   </entry>
   
@@ -205,16 +223,16 @@
   
   
   <entry>
-    <title>科研技术基础学习笔记</title>
-    <link href="/2023/02/10/%E7%A7%91%E7%A0%94%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <url>/2023/02/10/%E7%A7%91%E7%A0%94%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>科研技术基础</title>
+    <link href="/2023/02/10/%E7%A7%91%E7%A0%94%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/"/>
+    <url>/2023/02/10/%E7%A7%91%E7%A0%94%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言">0. 前言</h1><p>被 <a href="https://dang-tong.github.io/">Tong Dang</a>push学学Vim，记录一下学习的过程，争取能学下来（好难啊，<del>什么阴间玩意</del>）</p><p>update on 2023.2.6 ：经 <a href="https://dang-tong.github.io/">TongDang</a> 和 <a href="https://www.binzh.net/">Binzheng Zhang</a>教导，似乎Vim不用学那么多，又自己高估对自己的要求了……</p><h1 id="wsl">1. WSL</h1><p>不想用辣鸡虚拟机，不想用学校的vlab，不想放弃windows……</p><p>那就用Windows Subsystem for Linux！</p><p>听说win11可以自带linux软件的GUI界面炒鸡香，果断更新。</p><h2 id="需要记住的指令"><strong>需要记住的指令</strong></h2><ol type="1"><li><p>进入WSL（from Powershell）</p><blockquote><p>wsl</p></blockquote></li><li><p>查看WSL状态</p><blockquote><p>wsl -l -v</p></blockquote></li><li><p>WSL关机</p><blockquote><p>wsl --shutdown</p></blockquote></li></ol><h1 id="linuxwsl">2. Linux/WSL</h1><ol type="1"><li><p>从WSL返回到Powershell</p><blockquote><p>exit</p></blockquote></li><li><p>进入文件夹</p><blockquote><p>cd 'filename'</p></blockquote></li></ol><h1 id="vim">2. Vim</h1><p>刚刚进入为 <em>Normal</em> 模式</p><ol type="1"><li><p>切换到 <em>Insert</em> 模式</p><blockquote><p>i</p></blockquote></li><li><p>回到 <em>Normal</em> 模式</p><blockquote><p>'Esc'</p></blockquote></li><li><p><em>Normal</em> 模式中，删除光标所在位置（光标线后）的字符</p><blockquote><p>x</p></blockquote></li><li><p>存盘</p><blockquote><p>:w 'filename'</p></blockquote></li><li><p>退出vim</p><blockquote><p>:q</p></blockquote></li><li><p>打开一个文件</p><blockquote><p>:e 'path'</p></blockquote></li><li><p>保存并退出</p><blockquote><p>:x</p></blockquote><blockquote><p>ZZ</p></blockquote><blockquote><p>:wq</p></blockquote></li><li><p>退出不保存</p><blockquote><p>:q!</p></blockquote></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言">0. 前言</h1><p>被 <a href="https://dang-tong.github.io/">Tong Dang</a>push学学Vim，记录一下学习的过程，争取能学下来（好难啊，<del>什么阴间玩意</del>）</p><p>update on 2023.2.6 ：经 <a href="https://dang-tong.github.io/">TongDang</a> 和 <a href="https://www.binzh.net/">Binzheng Zhang</a>教导，似乎Vim不用学那么多，又自己高估对自己的要求了……</p><p>update on 2023.4.13 ：不想一遍遍翻<ahref="https://dang-tong.github.io/">TongDang</a>的ppt了抽时间把超算的运行记录在本文里吧……</p><h1 id="wsl">1. WSL</h1><p>不想用辣鸡虚拟机，不想用学校的vlab，不想放弃windows……</p><p>那就用Windows Subsystem for Linux！</p><p>听说win11可以自带linux软件的GUI界面炒鸡香，果断更新。</p><h2 id="需要记住的指令"><strong>需要记住的指令</strong></h2><ol type="1"><li><p>进入WSL（from Powershell）</p><blockquote><p>wsl</p></blockquote></li><li><p>查看WSL状态</p><blockquote><p>wsl -l -v</p></blockquote></li><li><p>WSL关机</p><blockquote><p>wsl --shutdown</p></blockquote></li></ol><h1 id="linuxwsl">2. Linux/WSL</h1><ol type="1"><li><p>从WSL返回到Powershell</p><blockquote><p>exit</p></blockquote></li><li><p>进入文件夹</p><blockquote><p>cd 'filename'</p></blockquote></li></ol><h1 id="vim">2. Vim</h1><p>刚刚进入为 <em>Normal</em> 模式</p><ol type="1"><li><p>切换到 <em>Insert</em> 模式</p><blockquote><p>i</p></blockquote></li><li><p>回到 <em>Normal</em> 模式</p><blockquote><p>'Esc'</p></blockquote></li><li><p><em>Normal</em> 模式中，删除光标所在位置（光标线后）的字符</p><blockquote><p>x</p></blockquote></li><li><p>存盘</p><blockquote><p>:w 'filename'</p></blockquote></li><li><p>退出vim</p><blockquote><p>:q</p></blockquote></li><li><p>打开一个文件</p><blockquote><p>:e 'path'</p></blockquote></li><li><p>保存并退出</p><blockquote><p>:x</p></blockquote><blockquote><p>ZZ</p></blockquote><blockquote><p>:wq</p></blockquote></li><li><p>退出不保存</p><blockquote><p>:q!</p></blockquote></li></ol>]]></content>
     
     
     <categories>
       
-      <category>Technology Study</category>
+      <category>Technology</category>
       
     </categories>
     
@@ -228,6 +246,8 @@
       <tag>Vim</tag>
       
       <tag>简体中文</tag>
+      
+      <tag>Research</tag>
       
     </tags>
     
@@ -315,7 +335,7 @@
     <link href="/2022/12/14/%E6%96%87%E7%8C%AE%E5%B8%B8%E7%94%A8%E8%AF%8D%E6%B1%87/"/>
     <url>/2022/12/14/%E6%96%87%E7%8C%AE%E5%B8%B8%E7%94%A8%E8%AF%8D%E6%B1%87/</url>
     
-    <content type="html"><![CDATA[<h1 id="a">A</h1><ol type="1"><li>adjacent 相邻的</li><li>anisotropy 各向异性</li><li>arbitrary 任意的</li><li>attributable 可能由于……的</li><li>axisymmetric 轴对称的</li></ol><h1 id="b">B</h1><ol type="1"><li>benchmark 基准</li><li>bulk 显得大</li></ol><h1 id="c">C</h1><ol type="1"><li>calibration 刻度，校准</li><li>celestial 天空上的</li><li>cohesive 有结合力的</li><li>constituent 成分</li><li>convective 对流的</li><li>cororate 同步旋转</li></ol><h1 id="d">D</h1><ol type="1"><li>dense 浓密的</li><li>deviation 偏差</li><li>devoid 缺乏</li><li>discrete 不连续的</li><li>disperse 分散</li><li>distribution分布</li><li>dominate 控制</li><li>drift 漂移</li><li>dynamo 发电机</li></ol><h1 id="e">E</h1><ol type="1"><li>electromagnetic 电磁的</li><li>embed 嵌入</li><li>evolve 逐渐形成</li><li>exert 施加</li><li>exosphere 外逸层（大气分层）</li></ol><h1 id="f">F</h1><ol type="1"><li>flux 流出</li></ol><h1 id="g">G</h1><ol type="1"><li>gradient 梯度</li></ol><h1 id="i">I</h1><ol type="1"><li>interannual 年际间的</li><li>interval 间隔</li><li>intensity 强度</li><li>intrinsic 固有的</li><li>ion 离子</li><li>ionosphere 电离层</li></ol><h1 id="j">J</h1><ol type="1"><li>jovian 木星的</li></ol><h1 id="k">K</h1><ol type="1"><li>kinetic 运动的</li></ol><h1 id="l">L</h1><ol type="1"><li>latitude 纬度</li></ol><h1 id="m">M</h1><ol type="1"><li>magnet 磁体</li><li>magnetic declination 磁偏角</li><li>magnetic inclination 磁倾角</li><li>magnetopause 磁层顶</li><li>magnetosheath 磁鞘</li><li>magnetosphere 磁层</li><li>magnetotail 磁尾</li><li>mesosphere 中间层（大气分层）</li><li>meteoroid 流星体</li><li>momentum 动量</li><li>monoxide 一氧化物</li></ol><h1 id="n">N</h1><ol type="1"><li>novel 新颖的</li></ol><h1 id="o">O</h1><ol type="1"><li>onset 开始</li><li>orientation 方向</li><li>oscillation 振动</li></ol><h1 id="p">P</h1><ol type="1"><li>particulate 粒子的</li><li>periodic 周期的</li><li>perpendicular 垂直</li><li>photoionization 光致电离</li><li>plasmoid 等离子体团</li><li>polar cap 极盖区</li><li>prevail 流行的</li><li>prominent 突出的，重要的</li></ol><h1 id="r">R</h1><ol type="1"><li>radii 半径</li><li>ratio 比率</li><li>regime 体制</li><li>remanent 剩余的</li><li>retrieve 找回</li><li>reveal 揭露</li></ol><h1 id="s">S</h1><ol type="1"><li>shed 流出</li><li>simultaneously 同时发生</li><li>solenoidal field 无散场</li><li>spectrum 光谱</li><li>spin 快速旋转</li><li>stochastic 随机的</li><li>stratification 分层</li><li>stratosphere 平流层</li><li>supersonic 超音速的</li><li>superstition 迷信</li></ol><h1 id="t">T</h1><ol type="1"><li>tenuous 脆弱的、稀薄的</li><li>terminate 结束</li><li>terrestrial 类地的</li><li>thereafter 之后</li><li>thermosphere 热层（大气分层）</li><li>tilt 倾斜</li><li>torus 环面</li><li>trajectory 轨道</li><li>transient 瞬变</li><li>tremendous 极大的，了不起的</li></ol><h1 id="u">U</h1><ol type="1"><li>ultimately 最终</li><li>underlying下层的</li></ol><h1 id="v">V</h1><ol type="1"><li>variation 变体</li><li>vast 大量的</li><li>vertical 竖直的</li><li>viscous 粘性的</li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="a">A</h1><ol type="1"><li>adjacent 相邻的</li><li>anisotropy 各向异性</li><li>arbitrary 任意的</li><li>attributable 可能由于……的</li><li>axisymmetric 轴对称的</li></ol><h1 id="b">B</h1><ol type="1"><li>benchmark 基准</li><li>bulk 显得大</li></ol><h1 id="c">C</h1><ol type="1"><li>calibration 刻度，校准</li><li>celestial 天空上的</li><li>cohesive 有结合力的</li><li>constituent 成分</li><li>convective 对流的</li><li>convolution 复杂的东西，卷积</li><li>cororate 同步旋转</li></ol><h1 id="d">D</h1><ol type="1"><li>dense 浓密的</li><li>derive 导出</li><li>deviation 偏差</li><li>devoid 缺乏</li><li>discrete 不连续的</li><li>disperse 分散</li><li>distribution分布</li><li>dominate 控制</li><li>drift 漂移</li><li>dynamo 发电机</li></ol><h1 id="e">E</h1><ol type="1"><li>electromagnetic 电磁的</li><li>embed 嵌入</li><li>evolve 逐渐形成</li><li>exert 施加</li><li>extract 提取</li><li>exosphere 外逸层（大气分层）</li></ol><h1 id="f">F</h1><ol type="1"><li>flux 流出</li></ol><h1 id="g">G</h1><ol type="1"><li>gradient 梯度</li></ol><h1 id="i">I</h1><ol type="1"><li>interannual 年际间的</li><li>interval 间隔</li><li>intensity 强度</li><li>intrinsic 固有的</li><li>ion 离子</li><li>ionosphere 电离层</li></ol><h1 id="j">J</h1><ol type="1"><li>jovian 木星的</li></ol><h1 id="k">K</h1><ol type="1"><li>kinetic 运动的</li></ol><h1 id="l">L</h1><ol type="1"><li>latitude 纬度</li></ol><h1 id="m">M</h1><ol type="1"><li>magnet 磁体</li><li>magnetic declination 磁偏角</li><li>magnetic inclination 磁倾角</li><li>magnetopause 磁层顶</li><li>magnetosheath 磁鞘</li><li>magnetosphere 磁层</li><li>magnetotail 磁尾</li><li>mesosphere 中间层（大气分层）</li><li>meteoroid 流星体</li><li>momentum 动量</li><li>monoxide 一氧化物</li></ol><h1 id="n">N</h1><ol type="1"><li>novel 新颖的</li></ol><h1 id="o">O</h1><ol type="1"><li>onset 开始</li><li>orientation 方向</li><li>oscillation 振动</li><li>ozone 臭氧</li></ol><h1 id="p">P</h1><ol type="1"><li>particulate 粒子的</li><li>periodic 周期的</li><li>perpendicular 垂直</li><li>photoionization 光致电离</li><li>plasmoid 等离子体团</li><li>polar cap 极盖区</li><li>prevail 流行的</li><li>prominent 突出的，重要的</li><li>protocol 协议</li></ol><h1 id="r">R</h1><ol type="1"><li>radii 半径</li><li>ratio 比率</li><li>regime 体制</li><li>remanent 剩余的</li><li>resolution 分辨率</li><li>retrieve 找回</li><li>reveal 揭露</li></ol><h1 id="s">S</h1><ol type="1"><li>shed 流出</li><li>simultaneously 同时发生</li><li>solenoidal field 无散场</li><li>spectrum 光谱</li><li>spin 快速旋转</li><li>stochastic 随机的</li><li>stratification 分层</li><li>stratosphere 平流层</li><li>supersonic 超音速的</li><li>superstition 迷信</li><li>synthetic 合成的</li></ol><h1 id="t">T</h1><ol type="1"><li>tenuous 脆弱的、稀薄的</li><li>terminate 结束</li><li>terrestrial 类地的</li><li>thereafter 之后</li><li>thermosphere 热层（大气分层）</li><li>tilt 倾斜</li><li>torus 环面</li><li>trajectory 轨道</li><li>transient 瞬变</li><li>tremendous 极大的，了不起的</li></ol><h1 id="u">U</h1><ol type="1"><li>ultimately 最终</li><li>underlying下层的</li></ol><h1 id="v">V</h1><ol type="1"><li>variation 变体</li><li>vast 大量的</li><li>vertical 竖直的</li><li>viscous 粘性的</li></ol>]]></content>
     
     
     <categories>
