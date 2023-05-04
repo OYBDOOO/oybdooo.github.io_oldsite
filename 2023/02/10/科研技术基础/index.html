@@ -24,7 +24,7 @@
 <meta property="og:description" content="0. 前言 被 Tong Dang push学学Vim，记录一下学习的过程，争取能学下来（好难啊，什么阴间玩意） update on 2023.2.6 ：经 Tong Dang 和 Binzheng Zhang 教导，似乎Vim不用学那么多，又自己高估对自己的要求了…… update on 2023.4.13 ：不想一遍遍翻Tong Dang的ppt了抽时间把超算的运行记录在本文里吧">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-10T15:37:49.000Z">
-<meta property="article:modified_time" content="2023-04-13T03:34:16.656Z">
+<meta property="article:modified_time" content="2023-05-04T10:12:58.556Z">
 <meta property="article:author" content="OYBDOOO">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="WSL">
@@ -252,7 +252,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          514 字
+          5.9k 字
         
       </span>
     
@@ -263,7 +263,7 @@
         
         
         
-          5 分钟
+          50 分钟
         
       </span>
     
@@ -395,6 +395,169 @@ Dang</a>的ppt了抽时间把超算的运行记录在本文里吧……</p>
 <p>:q!</p>
 </blockquote></li>
 </ol>
+<h1 id="数据读取">3. 数据读取</h1>
+<p>原代码来自<a target="_blank" rel="noopener" href="https://dang-tong.github.io/">Tong
+Dang</a>，俺给它改成木星的了，顺便加入注释供各位看官理解含义。</p>
+<p>```python #python header file import os from collections import
+defaultdict from time import time import h5py import numpy as np</p>
+<p>from scipy.io import savemat</p>
+<p>def get_equtorial_lfm(xCenter, yCenter, zCenter, value, kind='eq'):#
+Lyon-Fedder-Mobarry:the model of solar wind interacts with earth
+magsphere......</p>
+<pre><code class="hljs">xCenter, yCenter, zCenter, value = xCenter.T, yCenter.T, zCenter.T, value.T
+
+ni, nj, nk = zCenter.shape
+xe = np.zeros((ni, nj*2+1))
+ye = np.zeros_like(xe)
+ze = np.zeros_like(xe)
+data = np.zeros_like(xe)
+
+if kind == &#39;eq&#39;:# equitor 
+    for i in range(ni):
+        for j in range(nj):
+            xe[i, j] = xCenter[i, j, 0]# z=0
+            ye[i, j] = yCenter[i, j, 0]
+            data[i, j] = (value[i, j, 0]+value[i, j, -1])/2
+
+        for j in range(nj, nj*2):
+            xe[i, j] = xCenter[i, 2*nj-1-j, nk//2-1]# z=180
+            ye[i, j] = yCenter[i, 2*nj-1-j, nk//2-1]
+            data[i, j] = (value[i, 2*nj-1-j, nk//2-1] + value[i, 2*nj-1-j, nk//2])/2
+
+        xe[i, -1] = xe[i, 0]
+        ye[i, -1] = ye[i, 0]
+        data[i, -1] = data[i, 0]
+
+
+if kind == &#39;zx&#39;:# xz
+    for i in range(ni):
+        for j in range(nj):
+            xe[i, j] = xCenter[i, j, nk//4]# z=90
+            ye[i, j] = zCenter[i, j, nk//4]
+            data[i, j] = value[i, j, nk//4]
+
+        for j in range(nj, nj * 2):
+            xe[i, j] = xCenter[i, 2 * nj-1 - j, nk // 4*3]# z=270
+            ye[i, j] = zCenter[i, 2 * nj-1 - j, nk // 4*3]
+            data[i, j] = value[i, 2 * nj-1 - j, nk // 4*3]
+
+        xe[i, -1] = xe[i, 0]
+        ye[i, -1] = ye[i, 0]
+        data[i, -1] = data[i, 0]
+
+return xe, ye, ze, data
+
+pass</code></pre>
+<h1 id="file-source">file source</h1>
+<p>hdf_fldr = '/public/home/oybdooo/run_jupiter_0407/'# your h5 source
+mat_dir = '/public/home/oybdooo/matdata/jupiter_data_0412/'# the mat
+filepath u want to save</p>
+<p>os.makedirs(mat_dir, exist_ok=True) # to create your mat data path
+(robustness)</p>
+<p>i_mf = 1</p>
+<p>file_list = os.listdir(hdf_fldr) msphere_list = [] for c in
+file_list: if 'msphere' in c and 'Res' not in c:# to find the file we
+want to read eg: msphere_0002_0002_0001_0000_0000_0000.gam.h5
+msphere_list.append(c) msphere_list.sort() msphere_list =
+msphere_list[1:] prefix = msphere_list[-1][:-21]# get
+msphere_0002_0002_0001_0000 to msphere<a
+href="abandon%20the%20last%2021%20char">-1</a> name_split =
+msphere_list[-1].split('<em>')# divide prefix with </em> NI_rank =
+int(name_split[1])# 0002 NJ_rank = int(name_split[2])# 0002 NK_rank =
+int(name_split[3])# 0001 N_rank = int(name_split[-1].split('.')[0])#
+0000</p>
+<h1
+id="section">------------------------------------------------------------------</h1>
+<p>if i_mf == 1:# judge whether it is multi-fluid i_mf_list = ['D1',
+'D2', 'P1', 'P2', 'Vx1', 'Vx2', 'Vy1', 'Vy2', 'Vz1', 'Vz2'] else:
+i_mf_list = []</p>
+<p>norm_list = ['D', 'Vx', 'Vy', 'Vz', 'P', 'Bx', 'By', 'Bz', 'Jx',
+'Jy', 'Jz']+i_mf_list</p>
+<p>first_list = ['X', 'Y', 'Z', 'dV','X1']# dV: volume element #
+------------------------------------------------------------------</p>
+<p>Data_merge_first = defaultdict(np.ndarray)</p>
+<p>step_start = 0 step_end = 2400 # run for every step for step in
+range(step_start, step_end,1): t0 = time() Data_merge =
+defaultdict(np.ndarray) Data_lon = defaultdict(list) rank_count=0 for
+irank in range(0,NI_rank): Data = defaultdict(list) for jrank in
+range(0,NJ_rank): fn =
+prefix+'{:0&gt;4d}_{:0&gt;4d}_0000.gam.h5'.format(irank,jrank)# find the
+file rank_count = rank_count+1 file_up = h5py.File(hdf_fldr+'/'+fn,
+'r')# read the file file = file_up['Step#{}'.format(step)] if step ==
+step_start:# only gird file need save x,y,z! x = np.array(file_up['X'],
+order='C') y = np.array(file_up['Y'], order='C') z =
+np.array(file_up['Z'], order='C') v = np.array(file_up['dV'], order='C')
+nip, njp, nkp = x.shape I = np.arange(1, nip)# [1,2,3,...,nip] J =
+np.arange(1, njp) K = np.arange(1, nkp)</p>
+<pre><code class="hljs">            def center_3d(v):# find the center point
+                return 0.125*(v[:-1, :-1, :-1]+v[1:, :-1, :-1]+v[:-1, 1:, :-1]+v[:-1, :-1, 1:]
+                              +v[1:, 1:, :-1]+v[1:, :-1, 1:]+v[:-1, 1:, 1:]+v[1:, 1:, 1:])
+
+            xc = center_3d(x)
+            yc = center_3d(y)
+            zc = center_3d(z)
+
+            Data[&#39;X&#39;].append(xc)
+            Data[&#39;Y&#39;].append(yc)
+            Data[&#39;Z&#39;].append(zc)
+            Data[&#39;dV&#39;].append(v)
+            Data[&#39;X1&#39;].append(x)
+
+
+        for c in norm_list:
+            Data[c].append(np.array(file[c], order=&#39;C&#39;))
+    if step == step_start:# only gird file need save x,y,z!
+        for c in first_list:
+            Data_lon[c].append(np.hstack(Data[c]))
+
+    for c in norm_list:
+        Data_lon[c].append(np.hstack(Data[c]))
+
+if step == step_start:
+    for c in first_list:
+        Data_merge_first[c] = np.dstack(Data_lon[c])
+
+for c in norm_list:
+    Data_merge[c] = np.dstack(Data_lon[c])
+
+def getdata(kind=&#39;eq&#39;):
+    Data_interp = defaultdict(np.ndarray)
+    for c in norm_list:
+        _, _, _, res = get_equtorial_lfm(Data_merge_first[&#39;X&#39;], Data_merge_first[&#39;Y&#39;], Data_merge_first[&#39;Z&#39;], Data_merge[c], kind)
+        Data_interp[c] = res
+    return Data_interp
+
+def name_transform(name, label=&#39;e&#39;):# transform name rhoe/rhom blablabla
+    name = name.lower().replace(&#39;d&#39;, &#39;rho&#39;)
+    if name[-1].isdigit():
+        name = name[:-1]+label+name[-1]
+    else:
+        name = name+label
+    return name
+
+# get and save equatorial data
+Data_equator = getdata(&#39;eq&#39;)
+save_path_equator = mat_dir+&#39;/eq-&#123;:0&gt;4d&#125;.mat&#39;.format(step)
+save_dict_equator = defaultdict(np.ndarray)
+for c in norm_list:
+    save_dict_equator[name_transform(c, label=&#39;e&#39;)] = Data_equator[c]
+xe, ye, ze, _ = get_equtorial_lfm(Data_merge_first[&#39;X&#39;], Data_merge_first[&#39;Y&#39;], Data_merge_first[&#39;Z&#39;], Data_merge[&#39;D&#39;], &#39;eq&#39;)
+savemat(save_path_equator, save_dict_equator, do_compression=True)
+
+# get and save xz data
+Data_xz = getdata(&#39;zx&#39;)
+save_path_xz = mat_dir+&#39;/xz-&#123;:0&gt;4d&#125;.mat&#39;.format(step)
+save_dict_xz = defaultdict(np.ndarray)
+for c in norm_list:
+    save_dict_xz[name_transform(c, label=&#39;m&#39;)] = Data_xz[c]
+xm, ym, zm, _ = get_equtorial_lfm(Data_merge_first[&#39;X&#39;], Data_merge_first[&#39;Y&#39;], Data_merge_first[&#39;Z&#39;], Data_merge[&#39;D&#39;], &#39;zx&#39;)
+savemat(save_path_xz, save_dict_xz, do_compression=True)
+print(&#39;Step: &#123;&#125; time usage: &#123;&#125;&#39;.format(step, time()-t0))    
+
+if step == step_start:
+    # save grid
+    savemat(mat_dir+&#39;/grid_eq.mat&#39;, dict(xe=xe, ye=ye, ze=ze), do_compression=True)
+    savemat(mat_dir+&#39;/grid_xz.mat&#39;, dict(xm=xm, ym=ym, zm=zm), do_compression=True)</code></pre>
 
                 
               </div>
