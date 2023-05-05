@@ -16,15 +16,15 @@
   <meta name="author" content="OYBDOOO">
   <meta name="keywords" content="">
   
-    <meta name="description" content="0. 前言 被 Tong Dang push学学Vim，记录一下学习的过程，争取能学下来（好难啊，什么阴间玩意） update on 2023.2.6 ：经 Tong Dang 和 Binzheng Zhang 教导，似乎Vim不用学那么多，又自己高估对自己的要求了…… update on 2023.4.13 ：不想一遍遍翻Tong Dang的ppt了抽时间把超算的运行记录在本文里吧">
+    <meta name="description" content="0. 前言 被 Tong Dang push学学Vim，记录一下学习的过程，争取能学下来（好难啊，什么阴间玩意） update on 2023.2.6 ：经 Tong Dang 和 Binzheng Zhang 教导，似乎Vim不用学那么多，又自己高估对自己的要求了…… update on 2023.4.13 ：不想一遍遍翻 Tong Dang 的ppt了抽时间把超算的运行记录在本文">
 <meta property="og:type" content="article">
 <meta property="og:title" content="科研技术基础">
 <meta property="og:url" content="https://oybdooo.github.io/2023/02/10/%E7%A7%91%E7%A0%94%E6%8A%80%E6%9C%AF%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="OYBDOOO">
-<meta property="og:description" content="0. 前言 被 Tong Dang push学学Vim，记录一下学习的过程，争取能学下来（好难啊，什么阴间玩意） update on 2023.2.6 ：经 Tong Dang 和 Binzheng Zhang 教导，似乎Vim不用学那么多，又自己高估对自己的要求了…… update on 2023.4.13 ：不想一遍遍翻Tong Dang的ppt了抽时间把超算的运行记录在本文里吧">
+<meta property="og:description" content="0. 前言 被 Tong Dang push学学Vim，记录一下学习的过程，争取能学下来（好难啊，什么阴间玩意） update on 2023.2.6 ：经 Tong Dang 和 Binzheng Zhang 教导，似乎Vim不用学那么多，又自己高估对自己的要求了…… update on 2023.4.13 ：不想一遍遍翻 Tong Dang 的ppt了抽时间把超算的运行记录在本文">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-10T15:37:49.000Z">
-<meta property="article:modified_time" content="2023-05-04T10:12:58.556Z">
+<meta property="article:modified_time" content="2023-05-05T12:24:59.573Z">
 <meta property="article:author" content="OYBDOOO">
 <meta property="article:tag" content="Linux">
 <meta property="article:tag" content="WSL">
@@ -252,7 +252,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.9k 字
+          7.1k 字
         
       </span>
     
@@ -263,7 +263,7 @@
         
         
         
-          50 分钟
+          60 分钟
         
       </span>
     
@@ -320,9 +320,10 @@ push学学Vim，记录一下学习的过程，争取能学下来（好难啊，<
 <p>update on 2023.2.6 ：经 <a target="_blank" rel="noopener" href="https://dang-tong.github.io/">Tong
 Dang</a> 和 <a target="_blank" rel="noopener" href="https://www.binzh.net/">Binzheng Zhang</a>
 教导，似乎Vim不用学那么多，又自己高估对自己的要求了……</p>
-<p>update on 2023.4.13 ：不想一遍遍翻<a
-target="_blank" rel="noopener" href="https://dang-tong.github.io/">Tong
-Dang</a>的ppt了抽时间把超算的运行记录在本文里吧……</p>
+<p>update on 2023.4.13 ：不想一遍遍翻 <a
+target="_blank" rel="noopener" href="https://dang-tong.github.io/">Tong Dang</a>
+的ppt了抽时间把超算的运行记录在本文里吧……</p>
+<p>update on 2023.5.4 ：新增读取数据的代码（和我写的注释），生成视频</p>
 <h1 id="wsl">1. WSL</h1>
 <p>不想用辣鸡虚拟机，不想用学校的vlab，不想放弃windows……</p>
 <p>那就用Windows Subsystem for Linux！</p>
@@ -392,172 +393,20 @@ Dang</a>的ppt了抽时间把超算的运行记录在本文里吧……</p>
 </blockquote></li>
 <li><p>退出不保存</p>
 <blockquote>
-<p>:q!</p>
+<p>:q! # 3. 超算运行</p>
 </blockquote></li>
 </ol>
-<h1 id="数据读取">3. 数据读取</h1>
-<p>原代码来自<a target="_blank" rel="noopener" href="https://dang-tong.github.io/">Tong
+<p>咕咕咕</p>
+<h1 id="数据读取">4. 数据读取</h1>
+<p>原代码来自 <a target="_blank" rel="noopener" href="https://dang-tong.github.io/">Tong
 Dang</a>，俺给它改成木星的了，顺便加入注释供各位看官理解含义。</p>
-<p>```python #python header file import os from collections import
-defaultdict from time import time import h5py import numpy as np</p>
-<p>from scipy.io import savemat</p>
-<p>def get_equtorial_lfm(xCenter, yCenter, zCenter, value, kind='eq'):#
-Lyon-Fedder-Mobarry:the model of solar wind interacts with earth
-magsphere......</p>
-<pre><code class="hljs">xCenter, yCenter, zCenter, value = xCenter.T, yCenter.T, zCenter.T, value.T
-
-ni, nj, nk = zCenter.shape
-xe = np.zeros((ni, nj*2+1))
-ye = np.zeros_like(xe)
-ze = np.zeros_like(xe)
-data = np.zeros_like(xe)
-
-if kind == &#39;eq&#39;:# equitor 
-    for i in range(ni):
-        for j in range(nj):
-            xe[i, j] = xCenter[i, j, 0]# z=0
-            ye[i, j] = yCenter[i, j, 0]
-            data[i, j] = (value[i, j, 0]+value[i, j, -1])/2
-
-        for j in range(nj, nj*2):
-            xe[i, j] = xCenter[i, 2*nj-1-j, nk//2-1]# z=180
-            ye[i, j] = yCenter[i, 2*nj-1-j, nk//2-1]
-            data[i, j] = (value[i, 2*nj-1-j, nk//2-1] + value[i, 2*nj-1-j, nk//2])/2
-
-        xe[i, -1] = xe[i, 0]
-        ye[i, -1] = ye[i, 0]
-        data[i, -1] = data[i, 0]
-
-
-if kind == &#39;zx&#39;:# xz
-    for i in range(ni):
-        for j in range(nj):
-            xe[i, j] = xCenter[i, j, nk//4]# z=90
-            ye[i, j] = zCenter[i, j, nk//4]
-            data[i, j] = value[i, j, nk//4]
-
-        for j in range(nj, nj * 2):
-            xe[i, j] = xCenter[i, 2 * nj-1 - j, nk // 4*3]# z=270
-            ye[i, j] = zCenter[i, 2 * nj-1 - j, nk // 4*3]
-            data[i, j] = value[i, 2 * nj-1 - j, nk // 4*3]
-
-        xe[i, -1] = xe[i, 0]
-        ye[i, -1] = ye[i, 0]
-        data[i, -1] = data[i, 0]
-
-return xe, ye, ze, data
-
-pass</code></pre>
-<h1 id="file-source">file source</h1>
-<p>hdf_fldr = '/public/home/oybdooo/run_jupiter_0407/'# your h5 source
-mat_dir = '/public/home/oybdooo/matdata/jupiter_data_0412/'# the mat
-filepath u want to save</p>
-<p>os.makedirs(mat_dir, exist_ok=True) # to create your mat data path
-(robustness)</p>
-<p>i_mf = 1</p>
-<p>file_list = os.listdir(hdf_fldr) msphere_list = [] for c in
-file_list: if 'msphere' in c and 'Res' not in c:# to find the file we
-want to read eg: msphere_0002_0002_0001_0000_0000_0000.gam.h5
-msphere_list.append(c) msphere_list.sort() msphere_list =
-msphere_list[1:] prefix = msphere_list[-1][:-21]# get
-msphere_0002_0002_0001_0000 to msphere<a
-href="abandon%20the%20last%2021%20char">-1</a> name_split =
-msphere_list[-1].split('<em>')# divide prefix with </em> NI_rank =
-int(name_split[1])# 0002 NJ_rank = int(name_split[2])# 0002 NK_rank =
-int(name_split[3])# 0001 N_rank = int(name_split[-1].split('.')[0])#
-0000</p>
-<h1
-id="section">------------------------------------------------------------------</h1>
-<p>if i_mf == 1:# judge whether it is multi-fluid i_mf_list = ['D1',
-'D2', 'P1', 'P2', 'Vx1', 'Vx2', 'Vy1', 'Vy2', 'Vz1', 'Vz2'] else:
-i_mf_list = []</p>
-<p>norm_list = ['D', 'Vx', 'Vy', 'Vz', 'P', 'Bx', 'By', 'Bz', 'Jx',
-'Jy', 'Jz']+i_mf_list</p>
-<p>first_list = ['X', 'Y', 'Z', 'dV','X1']# dV: volume element #
-------------------------------------------------------------------</p>
-<p>Data_merge_first = defaultdict(np.ndarray)</p>
-<p>step_start = 0 step_end = 2400 # run for every step for step in
-range(step_start, step_end,1): t0 = time() Data_merge =
-defaultdict(np.ndarray) Data_lon = defaultdict(list) rank_count=0 for
-irank in range(0,NI_rank): Data = defaultdict(list) for jrank in
-range(0,NJ_rank): fn =
-prefix+'{:0&gt;4d}_{:0&gt;4d}_0000.gam.h5'.format(irank,jrank)# find the
-file rank_count = rank_count+1 file_up = h5py.File(hdf_fldr+'/'+fn,
-'r')# read the file file = file_up['Step#{}'.format(step)] if step ==
-step_start:# only gird file need save x,y,z! x = np.array(file_up['X'],
-order='C') y = np.array(file_up['Y'], order='C') z =
-np.array(file_up['Z'], order='C') v = np.array(file_up['dV'], order='C')
-nip, njp, nkp = x.shape I = np.arange(1, nip)# [1,2,3,...,nip] J =
-np.arange(1, njp) K = np.arange(1, nkp)</p>
-<pre><code class="hljs">            def center_3d(v):# find the center point
-                return 0.125*(v[:-1, :-1, :-1]+v[1:, :-1, :-1]+v[:-1, 1:, :-1]+v[:-1, :-1, 1:]
-                              +v[1:, 1:, :-1]+v[1:, :-1, 1:]+v[:-1, 1:, 1:]+v[1:, 1:, 1:])
-
-            xc = center_3d(x)
-            yc = center_3d(y)
-            zc = center_3d(z)
-
-            Data[&#39;X&#39;].append(xc)
-            Data[&#39;Y&#39;].append(yc)
-            Data[&#39;Z&#39;].append(zc)
-            Data[&#39;dV&#39;].append(v)
-            Data[&#39;X1&#39;].append(x)
-
-
-        for c in norm_list:
-            Data[c].append(np.array(file[c], order=&#39;C&#39;))
-    if step == step_start:# only gird file need save x,y,z!
-        for c in first_list:
-            Data_lon[c].append(np.hstack(Data[c]))
-
-    for c in norm_list:
-        Data_lon[c].append(np.hstack(Data[c]))
-
-if step == step_start:
-    for c in first_list:
-        Data_merge_first[c] = np.dstack(Data_lon[c])
-
-for c in norm_list:
-    Data_merge[c] = np.dstack(Data_lon[c])
-
-def getdata(kind=&#39;eq&#39;):
-    Data_interp = defaultdict(np.ndarray)
-    for c in norm_list:
-        _, _, _, res = get_equtorial_lfm(Data_merge_first[&#39;X&#39;], Data_merge_first[&#39;Y&#39;], Data_merge_first[&#39;Z&#39;], Data_merge[c], kind)
-        Data_interp[c] = res
-    return Data_interp
-
-def name_transform(name, label=&#39;e&#39;):# transform name rhoe/rhom blablabla
-    name = name.lower().replace(&#39;d&#39;, &#39;rho&#39;)
-    if name[-1].isdigit():
-        name = name[:-1]+label+name[-1]
-    else:
-        name = name+label
-    return name
-
-# get and save equatorial data
-Data_equator = getdata(&#39;eq&#39;)
-save_path_equator = mat_dir+&#39;/eq-&#123;:0&gt;4d&#125;.mat&#39;.format(step)
-save_dict_equator = defaultdict(np.ndarray)
-for c in norm_list:
-    save_dict_equator[name_transform(c, label=&#39;e&#39;)] = Data_equator[c]
-xe, ye, ze, _ = get_equtorial_lfm(Data_merge_first[&#39;X&#39;], Data_merge_first[&#39;Y&#39;], Data_merge_first[&#39;Z&#39;], Data_merge[&#39;D&#39;], &#39;eq&#39;)
-savemat(save_path_equator, save_dict_equator, do_compression=True)
-
-# get and save xz data
-Data_xz = getdata(&#39;zx&#39;)
-save_path_xz = mat_dir+&#39;/xz-&#123;:0&gt;4d&#125;.mat&#39;.format(step)
-save_dict_xz = defaultdict(np.ndarray)
-for c in norm_list:
-    save_dict_xz[name_transform(c, label=&#39;m&#39;)] = Data_xz[c]
-xm, ym, zm, _ = get_equtorial_lfm(Data_merge_first[&#39;X&#39;], Data_merge_first[&#39;Y&#39;], Data_merge_first[&#39;Z&#39;], Data_merge[&#39;D&#39;], &#39;zx&#39;)
-savemat(save_path_xz, save_dict_xz, do_compression=True)
-print(&#39;Step: &#123;&#125; time usage: &#123;&#125;&#39;.format(step, time()-t0))    
-
-if step == step_start:
-    # save grid
-    savemat(mat_dir+&#39;/grid_eq.mat&#39;, dict(xe=xe, ye=ye, ze=ze), do_compression=True)
-    savemat(mat_dir+&#39;/grid_xz.mat&#39;, dict(xm=xm, ym=ym, zm=zm), do_compression=True)</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#python header file</span><br><span class="hljs-keyword">import</span> os<br><span class="hljs-keyword">from</span> collections <span class="hljs-keyword">import</span> defaultdict<br><span class="hljs-keyword">from</span> time <span class="hljs-keyword">import</span> time<br><span class="hljs-keyword">import</span> h5py<br><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><br><span class="hljs-keyword">from</span> scipy.io <span class="hljs-keyword">import</span> savemat<br><br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">get_equtorial_lfm</span>(<span class="hljs-params">xCenter, yCenter, zCenter, value, kind=<span class="hljs-string">&#x27;eq&#x27;</span></span>):<span class="hljs-comment"># Lyon-Fedder-Mobarry:the model of solar wind interacts with earth magsphere......</span><br>    <br>    xCenter, yCenter, zCenter, value = xCenter.T, yCenter.T, zCenter.T, value.T<br>    <br>    ni, nj, nk = zCenter.shape<br>    xe = np.zeros((ni, nj*<span class="hljs-number">2</span>+<span class="hljs-number">1</span>))<br>    ye = np.zeros_like(xe)<br>    ze = np.zeros_like(xe)<br>    data = np.zeros_like(xe)<br><br>    <span class="hljs-keyword">if</span> kind == <span class="hljs-string">&#x27;eq&#x27;</span>:<span class="hljs-comment"># equitor </span><br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(ni):<br>            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(nj):<br>                xe[i, j] = xCenter[i, j, <span class="hljs-number">0</span>]<span class="hljs-comment"># z=0</span><br>                ye[i, j] = yCenter[i, j, <span class="hljs-number">0</span>]<br>                data[i, j] = (value[i, j, <span class="hljs-number">0</span>]+value[i, j, -<span class="hljs-number">1</span>])/<span class="hljs-number">2</span><br><br>            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(nj, nj*<span class="hljs-number">2</span>):<br>                xe[i, j] = xCenter[i, <span class="hljs-number">2</span>*nj-<span class="hljs-number">1</span>-j, nk//<span class="hljs-number">2</span>-<span class="hljs-number">1</span>]<span class="hljs-comment"># z=180</span><br>                ye[i, j] = yCenter[i, <span class="hljs-number">2</span>*nj-<span class="hljs-number">1</span>-j, nk//<span class="hljs-number">2</span>-<span class="hljs-number">1</span>]<br>                data[i, j] = (value[i, <span class="hljs-number">2</span>*nj-<span class="hljs-number">1</span>-j, nk//<span class="hljs-number">2</span>-<span class="hljs-number">1</span>] + value[i, <span class="hljs-number">2</span>*nj-<span class="hljs-number">1</span>-j, nk//<span class="hljs-number">2</span>])/<span class="hljs-number">2</span><br><br>            xe[i, -<span class="hljs-number">1</span>] = xe[i, <span class="hljs-number">0</span>]<br>            ye[i, -<span class="hljs-number">1</span>] = ye[i, <span class="hljs-number">0</span>]<br>            data[i, -<span class="hljs-number">1</span>] = data[i, <span class="hljs-number">0</span>]<br><br><br>    <span class="hljs-keyword">if</span> kind == <span class="hljs-string">&#x27;zx&#x27;</span>:<span class="hljs-comment"># xz</span><br>        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(ni):<br>            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(nj):<br>                xe[i, j] = xCenter[i, j, nk//<span class="hljs-number">4</span>]<span class="hljs-comment"># z=90</span><br>                ye[i, j] = zCenter[i, j, nk//<span class="hljs-number">4</span>]<br>                data[i, j] = value[i, j, nk//<span class="hljs-number">4</span>]<br><br>            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(nj, nj * <span class="hljs-number">2</span>):<br>                xe[i, j] = xCenter[i, <span class="hljs-number">2</span> * nj-<span class="hljs-number">1</span> - j, nk // <span class="hljs-number">4</span>*<span class="hljs-number">3</span>]<span class="hljs-comment"># z=270</span><br>                ye[i, j] = zCenter[i, <span class="hljs-number">2</span> * nj-<span class="hljs-number">1</span> - j, nk // <span class="hljs-number">4</span>*<span class="hljs-number">3</span>]<br>                data[i, j] = value[i, <span class="hljs-number">2</span> * nj-<span class="hljs-number">1</span> - j, nk // <span class="hljs-number">4</span>*<span class="hljs-number">3</span>]<br><br>            xe[i, -<span class="hljs-number">1</span>] = xe[i, <span class="hljs-number">0</span>]<br>            ye[i, -<span class="hljs-number">1</span>] = ye[i, <span class="hljs-number">0</span>]<br>            data[i, -<span class="hljs-number">1</span>] = data[i, <span class="hljs-number">0</span>]<br><br>    <span class="hljs-keyword">return</span> xe, ye, ze, data<br><br>    <span class="hljs-keyword">pass</span><br><br><span class="hljs-comment"># file source</span><br>hdf_fldr = <span class="hljs-string">&#x27;/public/home/oybdooo/run_jupiter_0407/&#x27;</span><span class="hljs-comment"># your h5 source</span><br>mat_dir  = <span class="hljs-string">&#x27;/public/home/oybdooo/matdata/jupiter_data_0412/&#x27;</span><span class="hljs-comment"># the mat filepath u want to save</span><br><br>os.makedirs(mat_dir, exist_ok=<span class="hljs-literal">True</span>) <span class="hljs-comment"># to create your mat data path (robustness)</span><br><br>i_mf = <span class="hljs-number">1</span><br><br>file_list = os.listdir(hdf_fldr)<br>msphere_list = []<br><span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> file_list:<br>    <span class="hljs-keyword">if</span> <span class="hljs-string">&#x27;msphere&#x27;</span> <span class="hljs-keyword">in</span> c <span class="hljs-keyword">and</span> <span class="hljs-string">&#x27;Res&#x27;</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> c:<span class="hljs-comment"># to find the file we want to read eg:  msphere_0002_0002_0001_0000_0000_0000.gam.h5</span><br>        msphere_list.append(c)<br>msphere_list.sort()<br>msphere_list = msphere_list[<span class="hljs-number">1</span>:]<br>prefix = msphere_list[-<span class="hljs-number">1</span>][:-<span class="hljs-number">21</span>]<span class="hljs-comment"># get msphere_0002_0002_0001_0000 to msphere[-1](abandon the last 21 char)</span><br>name_split = msphere_list[-<span class="hljs-number">1</span>].split(<span class="hljs-string">&#x27;_&#x27;</span>)<span class="hljs-comment"># divide prefix with _</span><br>NI_rank = <span class="hljs-built_in">int</span>(name_split[<span class="hljs-number">1</span>])<span class="hljs-comment"># 0002</span><br>NJ_rank = <span class="hljs-built_in">int</span>(name_split[<span class="hljs-number">2</span>])<span class="hljs-comment"># 0002</span><br>NK_rank = <span class="hljs-built_in">int</span>(name_split[<span class="hljs-number">3</span>])<span class="hljs-comment"># 0001</span><br>N_rank = <span class="hljs-built_in">int</span>(name_split[-<span class="hljs-number">1</span>].split(<span class="hljs-string">&#x27;.&#x27;</span>)[<span class="hljs-number">0</span>])<span class="hljs-comment"># 0000</span><br><br><span class="hljs-comment"># ------------------------------------------------------------------</span><br><span class="hljs-keyword">if</span> i_mf == <span class="hljs-number">1</span>:<span class="hljs-comment"># judge whether it is multi-fluid</span><br>    i_mf_list = [<span class="hljs-string">&#x27;D1&#x27;</span>, <span class="hljs-string">&#x27;D2&#x27;</span>, <span class="hljs-string">&#x27;P1&#x27;</span>, <span class="hljs-string">&#x27;P2&#x27;</span>, <span class="hljs-string">&#x27;Vx1&#x27;</span>, <span class="hljs-string">&#x27;Vx2&#x27;</span>, <span class="hljs-string">&#x27;Vy1&#x27;</span>, <span class="hljs-string">&#x27;Vy2&#x27;</span>,<br>                 <span class="hljs-string">&#x27;Vz1&#x27;</span>, <span class="hljs-string">&#x27;Vz2&#x27;</span>]<br><span class="hljs-keyword">else</span>:<br>    i_mf_list = []<br><br>norm_list = [<span class="hljs-string">&#x27;D&#x27;</span>, <span class="hljs-string">&#x27;Vx&#x27;</span>, <span class="hljs-string">&#x27;Vy&#x27;</span>, <span class="hljs-string">&#x27;Vz&#x27;</span>, <span class="hljs-string">&#x27;P&#x27;</span>, <span class="hljs-string">&#x27;Bx&#x27;</span>, <span class="hljs-string">&#x27;By&#x27;</span>, <span class="hljs-string">&#x27;Bz&#x27;</span>, <span class="hljs-string">&#x27;Jx&#x27;</span>, <span class="hljs-string">&#x27;Jy&#x27;</span>, <span class="hljs-string">&#x27;Jz&#x27;</span>]+i_mf_list<br><br>first_list = [<span class="hljs-string">&#x27;X&#x27;</span>, <span class="hljs-string">&#x27;Y&#x27;</span>, <span class="hljs-string">&#x27;Z&#x27;</span>, <span class="hljs-string">&#x27;dV&#x27;</span>,<span class="hljs-string">&#x27;X1&#x27;</span>]<span class="hljs-comment"># dV: volume element</span><br><span class="hljs-comment"># ------------------------------------------------------------------</span><br><br><br>Data_merge_first = defaultdict(np.ndarray)<br><br>step_start = <span class="hljs-number">0</span><br>step_end   = <span class="hljs-number">2400</span> <span class="hljs-comment"># run for every step</span><br><span class="hljs-keyword">for</span> step <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(step_start, step_end,<span class="hljs-number">1</span>):<br>    t0 = time()<br>    Data_merge = defaultdict(np.ndarray)<br>    Data_lon = defaultdict(<span class="hljs-built_in">list</span>)<br>    rank_count=<span class="hljs-number">0</span><br>    <span class="hljs-keyword">for</span> irank <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,NI_rank):<br>        Data = defaultdict(<span class="hljs-built_in">list</span>)<br>        <span class="hljs-keyword">for</span> jrank <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>,NJ_rank):<br>            fn = prefix+<span class="hljs-string">&#x27;&#123;:0&gt;4d&#125;_&#123;:0&gt;4d&#125;_0000.gam.h5&#x27;</span>.<span class="hljs-built_in">format</span>(irank,jrank)<span class="hljs-comment"># find the file</span><br>            rank_count = rank_count+<span class="hljs-number">1</span><br>            file_up = h5py.File(hdf_fldr+<span class="hljs-string">&#x27;/&#x27;</span>+fn, <span class="hljs-string">&#x27;r&#x27;</span>)<span class="hljs-comment"># read the file</span><br>            file = file_up[<span class="hljs-string">&#x27;Step#&#123;&#125;&#x27;</span>.<span class="hljs-built_in">format</span>(step)]<br>            <span class="hljs-keyword">if</span> step == step_start:<span class="hljs-comment"># only gird file need save x,y,z!</span><br>                x = np.array(file_up[<span class="hljs-string">&#x27;X&#x27;</span>], order=<span class="hljs-string">&#x27;C&#x27;</span>)<br>                y = np.array(file_up[<span class="hljs-string">&#x27;Y&#x27;</span>], order=<span class="hljs-string">&#x27;C&#x27;</span>)<br>                z = np.array(file_up[<span class="hljs-string">&#x27;Z&#x27;</span>], order=<span class="hljs-string">&#x27;C&#x27;</span>)<br>                v = np.array(file_up[<span class="hljs-string">&#x27;dV&#x27;</span>], order=<span class="hljs-string">&#x27;C&#x27;</span>)<br>                nip, njp, nkp = x.shape<br>                I = np.arange(<span class="hljs-number">1</span>, nip)<span class="hljs-comment"># [1,2,3,...,nip]</span><br>                J = np.arange(<span class="hljs-number">1</span>, njp)<br>                K = np.arange(<span class="hljs-number">1</span>, nkp)<br><br>                <span class="hljs-keyword">def</span> <span class="hljs-title function_">center_3d</span>(<span class="hljs-params">v</span>):<span class="hljs-comment"># find the center point</span><br>                    <span class="hljs-keyword">return</span> <span class="hljs-number">0.125</span>*(v[:-<span class="hljs-number">1</span>, :-<span class="hljs-number">1</span>, :-<span class="hljs-number">1</span>]+v[<span class="hljs-number">1</span>:, :-<span class="hljs-number">1</span>, :-<span class="hljs-number">1</span>]+v[:-<span class="hljs-number">1</span>, <span class="hljs-number">1</span>:, :-<span class="hljs-number">1</span>]+v[:-<span class="hljs-number">1</span>, :-<span class="hljs-number">1</span>, <span class="hljs-number">1</span>:]<br>                                  +v[<span class="hljs-number">1</span>:, <span class="hljs-number">1</span>:, :-<span class="hljs-number">1</span>]+v[<span class="hljs-number">1</span>:, :-<span class="hljs-number">1</span>, <span class="hljs-number">1</span>:]+v[:-<span class="hljs-number">1</span>, <span class="hljs-number">1</span>:, <span class="hljs-number">1</span>:]+v[<span class="hljs-number">1</span>:, <span class="hljs-number">1</span>:, <span class="hljs-number">1</span>:])<br><br>                xc = center_3d(x)<br>                yc = center_3d(y)<br>                zc = center_3d(z)<br><br>                Data[<span class="hljs-string">&#x27;X&#x27;</span>].append(xc)<br>                Data[<span class="hljs-string">&#x27;Y&#x27;</span>].append(yc)<br>                Data[<span class="hljs-string">&#x27;Z&#x27;</span>].append(zc)<br>                Data[<span class="hljs-string">&#x27;dV&#x27;</span>].append(v)<br>                Data[<span class="hljs-string">&#x27;X1&#x27;</span>].append(x)<br><br><br>            <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> norm_list:<br>                Data[c].append(np.array(file[c], order=<span class="hljs-string">&#x27;C&#x27;</span>))<br>        <span class="hljs-keyword">if</span> step == step_start:<span class="hljs-comment"># only gird file need save x,y,z!</span><br>            <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> first_list:<br>                Data_lon[c].append(np.hstack(Data[c]))<br><br>        <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> norm_list:<br>            Data_lon[c].append(np.hstack(Data[c]))<br><br>    <span class="hljs-keyword">if</span> step == step_start:<br>        <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> first_list:<br>            Data_merge_first[c] = np.dstack(Data_lon[c])<br><br>    <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> norm_list:<br>        Data_merge[c] = np.dstack(Data_lon[c])<br><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">getdata</span>(<span class="hljs-params">kind=<span class="hljs-string">&#x27;eq&#x27;</span></span>):<br>        Data_interp = defaultdict(np.ndarray)<br>        <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> norm_list:<br>            _, _, _, res = get_equtorial_lfm(Data_merge_first[<span class="hljs-string">&#x27;X&#x27;</span>], Data_merge_first[<span class="hljs-string">&#x27;Y&#x27;</span>], Data_merge_first[<span class="hljs-string">&#x27;Z&#x27;</span>], Data_merge[c], kind)<br>            Data_interp[c] = res<br>        <span class="hljs-keyword">return</span> Data_interp<br><br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">name_transform</span>(<span class="hljs-params">name, label=<span class="hljs-string">&#x27;e&#x27;</span></span>):<span class="hljs-comment"># transform name rhoe/rhom blablabla</span><br>        name = name.lower().replace(<span class="hljs-string">&#x27;d&#x27;</span>, <span class="hljs-string">&#x27;rho&#x27;</span>)<br>        <span class="hljs-keyword">if</span> name[-<span class="hljs-number">1</span>].isdigit():<br>            name = name[:-<span class="hljs-number">1</span>]+label+name[-<span class="hljs-number">1</span>]<br>        <span class="hljs-keyword">else</span>:<br>            name = name+label<br>        <span class="hljs-keyword">return</span> name<br><br>    <span class="hljs-comment"># get and save equatorial data</span><br>    Data_equator = getdata(<span class="hljs-string">&#x27;eq&#x27;</span>)<br>    save_path_equator = mat_dir+<span class="hljs-string">&#x27;/eq-&#123;:0&gt;4d&#125;.mat&#x27;</span>.<span class="hljs-built_in">format</span>(step)<br>    save_dict_equator = defaultdict(np.ndarray)<br>    <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> norm_list:<br>        save_dict_equator[name_transform(c, label=<span class="hljs-string">&#x27;e&#x27;</span>)] = Data_equator[c]<br>    xe, ye, ze, _ = get_equtorial_lfm(Data_merge_first[<span class="hljs-string">&#x27;X&#x27;</span>], Data_merge_first[<span class="hljs-string">&#x27;Y&#x27;</span>], Data_merge_first[<span class="hljs-string">&#x27;Z&#x27;</span>], Data_merge[<span class="hljs-string">&#x27;D&#x27;</span>], <span class="hljs-string">&#x27;eq&#x27;</span>)<br>    savemat(save_path_equator, save_dict_equator, do_compression=<span class="hljs-literal">True</span>)<br><br>    <span class="hljs-comment"># get and save xz data</span><br>    Data_xz = getdata(<span class="hljs-string">&#x27;zx&#x27;</span>)<br>    save_path_xz = mat_dir+<span class="hljs-string">&#x27;/xz-&#123;:0&gt;4d&#125;.mat&#x27;</span>.<span class="hljs-built_in">format</span>(step)<br>    save_dict_xz = defaultdict(np.ndarray)<br>    <span class="hljs-keyword">for</span> c <span class="hljs-keyword">in</span> norm_list:<br>        save_dict_xz[name_transform(c, label=<span class="hljs-string">&#x27;m&#x27;</span>)] = Data_xz[c]<br>    xm, ym, zm, _ = get_equtorial_lfm(Data_merge_first[<span class="hljs-string">&#x27;X&#x27;</span>], Data_merge_first[<span class="hljs-string">&#x27;Y&#x27;</span>], Data_merge_first[<span class="hljs-string">&#x27;Z&#x27;</span>], Data_merge[<span class="hljs-string">&#x27;D&#x27;</span>], <span class="hljs-string">&#x27;zx&#x27;</span>)<br>    savemat(save_path_xz, save_dict_xz, do_compression=<span class="hljs-literal">True</span>)<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Step: &#123;&#125; time usage: &#123;&#125;&#x27;</span>.<span class="hljs-built_in">format</span>(step, time()-t0))    <br>    <br>    <span class="hljs-keyword">if</span> step == step_start:<br>        <span class="hljs-comment"># save grid</span><br>        savemat(mat_dir+<span class="hljs-string">&#x27;/grid_eq.mat&#x27;</span>, <span class="hljs-built_in">dict</span>(xe=xe, ye=ye, ze=ze), do_compression=<span class="hljs-literal">True</span>)<br>        savemat(mat_dir+<span class="hljs-string">&#x27;/grid_xz.mat&#x27;</span>, <span class="hljs-built_in">dict</span>(xm=xm, ym=ym, zm=zm), do_compression=<span class="hljs-literal">True</span>)<br><br></code></pre></td></tr></table></figure>
+<h1 id="生成视频">5. 生成视频</h1>
+<p>俺是先用WSL进入图片对应路径，如果图片的长度和宽度像素不为<strong>偶数</strong>需要用scale调整到偶数！</p>
+<blockquote>
+<p>ffmpeg -framerate 25 -pattern_type glob -i '*.png' -vf
+scale=2364:2262 -pix_fmt yuv420p eq-Bt.mp4</p>
+</blockquote>
 
                 
               </div>
