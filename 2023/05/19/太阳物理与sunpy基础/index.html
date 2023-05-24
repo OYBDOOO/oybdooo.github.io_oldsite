@@ -16,22 +16,25 @@
   <meta name="author" content="OYBDOOO">
   <meta name="keywords" content="">
   
-    <meta name="description" content="QwQ 也不知道什么想说的了，QwQ完全可以代表俺的心里状态，Longest QwQ Sequence是俺记得在当年学OI（信息学竞赛）的时候看到有人模仿最长不下降子序列（经典动态规划算法例题）起的ID，脑海中突然闪过，就随便写写。 QAQ 别人的假期总会找到伴一起玩，俺的假期往往都是宅。也不是俺不爱玩，就是人缘混太差，自己出去呢，够清高，但是觉得怪怪的~ 为啥人缘差呢，俺现在都没搞明白">
+    <meta name="description" content="前言 2023年5月18日，俺的“大学生创新训练计划” 太阳多波段天气图及其长期演化（Solar synoptic maps at multiple passbands and their long-term evolution）开始辣。由于本人之前主要搞的是行星磁层之类的，所以不甚了解，故开此贴，好好学习学习太阳物理的blablabla。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Longest QwQ Sequence">
-<meta property="og:url" content="https://oybdooo.github.io/2023/05/01/Longest-QwQ-Sequence/index.html">
+<meta property="og:title" content="太阳物理与sunpy基础">
+<meta property="og:url" content="https://oybdooo.github.io/2023/05/19/%E5%A4%AA%E9%98%B3%E7%89%A9%E7%90%86%E4%B8%8Esunpy%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="OYBDOOO">
-<meta property="og:description" content="QwQ 也不知道什么想说的了，QwQ完全可以代表俺的心里状态，Longest QwQ Sequence是俺记得在当年学OI（信息学竞赛）的时候看到有人模仿最长不下降子序列（经典动态规划算法例题）起的ID，脑海中突然闪过，就随便写写。 QAQ 别人的假期总会找到伴一起玩，俺的假期往往都是宅。也不是俺不爱玩，就是人缘混太差，自己出去呢，够清高，但是觉得怪怪的~ 为啥人缘差呢，俺现在都没搞明白">
+<meta property="og:description" content="前言 2023年5月18日，俺的“大学生创新训练计划” 太阳多波段天气图及其长期演化（Solar synoptic maps at multiple passbands and their long-term evolution）开始辣。由于本人之前主要搞的是行星磁层之类的，所以不甚了解，故开此贴，好好学习学习太阳物理的blablabla。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-04-30T17:20:22.000Z">
-<meta property="article:modified_time" content="2023-04-30T18:19:14.607Z">
+<meta property="article:published_time" content="2023-05-19T09:04:17.000Z">
+<meta property="article:modified_time" content="2023-05-19T09:07:20.257Z">
 <meta property="article:author" content="OYBDOOO">
-<meta property="article:tag" content="简体中文">
+<meta property="article:tag" content="原创">
+<meta property="article:tag" content="空间物理">
+<meta property="article:tag" content="太阳物理">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Longest QwQ Sequence - OYBDOOO</title>
+  <title>太阳物理与sunpy基础 - OYBDOOO</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -225,7 +228,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Longest QwQ Sequence"></span>
+            <span id="subtitle" data-typed-text="太阳物理与sunpy基础"></span>
           
         </div>
 
@@ -236,8 +239,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-05-01 01:20" pubdate>
-          2023年5月1日 凌晨
+        <time datetime="2023-05-19 17:04" pubdate>
+          2023年5月19日 下午
         </time>
       </span>
     
@@ -248,7 +251,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          160 字
         
       </span>
     
@@ -259,7 +262,7 @@
         
         
         
-          12 分钟
+          2 分钟
         
       </span>
     
@@ -305,38 +308,17 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Longest QwQ Sequence</h1>
+            <h1 style="display: none">太阳物理与sunpy基础</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="qwq">QwQ</h1>
-<p>也不知道什么想说的了，QwQ完全可以代表俺的心里状态，Longest QwQ
-Sequence是俺记得在当年学OI（信息学竞赛）的时候看到有人模仿最长不下降子序列（经典动态规划算法例题）起的ID，脑海中突然闪过，就随便写写。</p>
-<h1 id="qaq">QAQ</h1>
-<p>别人的假期总会找到伴一起玩，俺的假期往往都是宅。也不是俺不爱玩，就是人缘混太差，自己出去呢，够清高，但是觉得怪怪的~</p>
-<p>为啥人缘差呢，俺现在都没搞明白。高中、小学少读一年？倒也不是因为这。太清高？俺觉得俺也不是。比较烦人？这倒有可能。</p>
-<p>为啥烦人？首先要不是俺的毛病，要不是人的毛病。俺可能不会和人交往、太怪、太爱说真话、太没有尊卑所以招人烦。但俺觉得这也不全是俺的问题，不同人价值观、人品取向啥的都不同。</p>
-<p>从太没有尊卑开始：俺就是觉得“人人生而平等”、“敬真理而不敬长者”（如此简单的道理），在俺眼里没有领导、官阶、地位啥的。好！这就得罪了俺从娃到大的大部分“长者”。</p>
-<p>太爱说真话呢？（其实也不算，俺有的时候很爱讲故事，但是故事和现实俺要不解释明白，要不就用故事表达现实中的事）这个还真改不了，从小被教育不能撒谎，长大不撒谎，多么天经地义。咋想咋说，并且在说之前加个“我认为”，这样的表述尽数客观。虽说咱知道这社会说真话的人没啥好下场，但俺觉得那种所谓的“成熟”更像是一种油腻和邪恶~</p>
-<p>太怪呢？俺觉得俺挺正常的，行事风格一人一套，被形容“逆天”啥的常有。以高中的时候俺爱发怪声被全班声讨为例：</p>
-<ol type="1">
-<li>俺都是在下课的时候发的，下课本应嘈杂，符合规定</li>
-<li>发怪声会让俺心情愉快，释放压力</li>
-</ol>
-<p>所以吧，应该和自己和解，俺怪没影响他人。</p>
-<p>不会和人交往确实是俺的问题。但是这大千世界也没个正儿八经的《Guide For
-Communicating》，俺不太会没事找事、没话找话来maintain那个本应该因为时间、空间断裂的“朋友”关系。这么做也没啥意义。</p>
-<h1 id="tat">TAT</h1>
-<p>主要是吧，这样的人，要是能力强，周围一样有的是“伴儿”。俺吧，能耐太少，太菜。小学学的还行，去了超常部纯垫底学渣，初中学的一般，到了高中照样垫底，运气好读了个“好”大学，又差不多垫底咯~</p>
-<p>但是呢，俺有骨气。初中高中从来没觉得这“神”那“学霸”的是完全胜过我的人（不像俺中学有的脑残老师经常教育学生“那谁谁谁，长得比你帅，学习比你好，还有女朋友，你啥比的过啊？”）。</p>
-<p>俺觉得吧，能混到今天够不错的了，俺不对自己曾经的不努力而后悔，但是俺现在开始吧总想让自己活得刺激点。人都一鼻子俩眼，有啥差别人的？</p>
-<h1 id="section">^_^</h1>
-<p>写到这，俺心里就挺爽了。朝信基督夜信佛，快乐至上之类的反传统、反正规、反主流就是俺的追求。碰到解决不了的事就去解决，脑子里闪个念头就去干，瞧不起俺就等着看，烦俺就对不起，喜欢俺就交朋友，正确的建议听完就照着改，敢作敢当，简单快乐没烦恼。</p>
-<p>这些道理俺18岁就悟了，大千世界，好多人而立、不惑、天命之年都没悟，自以为懂了“厚黑学”、“官场学”、“成功学”就仿佛打通任督二脉，其实恰恰少的就是生而为人的自由、对真理的不懈追求、对同类抱有的善良。当然他们也不敢喊出“Le
-monde est à toi”（这世界完全属于你）咯。</p>
-<p>有意思的是总有人说俺“幼稚”，“不成熟”，听起来挺有意思。俺想问问成熟的你，快乐了吗？</p>
-<p>（也许18岁的俺还有点理想主义，几十年后maybe俺也“泯然众人矣”咯）</p>
+                <h1 id="前言">前言</h1>
+<p>2023年5月18日，俺的“大学生创新训练计划”
+太阳多波段天气图及其长期演化（Solar synoptic maps at multiple passbands
+and their long-term
+evolution）开始辣。由于本人之前主要搞的是行星磁层之类的，所以不甚了解，故开此贴，好好学习学习太阳物理的blablabla。</p>
+<h1 id="section"></h1>
 
                 
               </div>
@@ -355,7 +337,7 @@ monde est à toi”（这世界完全属于你）咯。</p>
     
       <span class="category-chain">
         
-  <a href="/categories/Life/" class="category-chain-item">Life</a>
+  <a href="/categories/%E7%A9%BA%E9%97%B4%E7%89%A9%E7%90%86/" class="category-chain-item">空间物理</a>
   
   
 
@@ -370,7 +352,13 @@ monde est à toi”（这世界完全属于你）咯。</p>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87/">#简体中文</a>
+        <a href="/tags/%E5%8E%9F%E5%88%9B/">#原创</a>
+      
+        <a href="/tags/%E7%A9%BA%E9%97%B4%E7%89%A9%E7%90%86/">#空间物理</a>
+      
+        <a href="/tags/%E5%A4%AA%E9%98%B3%E7%89%A9%E7%90%86/">#太阳物理</a>
+      
+        <a href="/tags/Python/">#Python</a>
       
     </div>
   
@@ -382,8 +370,8 @@ monde est à toi”（这世界完全属于你）咯。</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Longest QwQ Sequence</div>
-      <div>https://oybdooo.github.io/2023/05/01/Longest-QwQ-Sequence/</div>
+      <div>太阳物理与sunpy基础</div>
+      <div>https://oybdooo.github.io/2023/05/19/太阳物理与sunpy基础/</div>
     </div>
     <div class="license-meta">
       
@@ -395,7 +383,7 @@ monde est à toi”（这世界完全属于你）咯。</p>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年5月1日</div>
+          <div>2023年5月19日</div>
         </div>
       
       
@@ -427,18 +415,12 @@ monde est à toi”（这世界完全属于你）咯。</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/05/19/%E5%A4%AA%E9%98%B3%E7%89%A9%E7%90%86%E4%B8%8Esunpy%E5%9F%BA%E7%A1%80/" title="太阳物理与sunpy基础">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">太阳物理与sunpy基础</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/04/28/%E7%A3%81%E5%B1%82%E5%BC%95%E8%AE%BA/" title="磁层引论">
-                        <span class="hidden-mobile">磁层引论</span>
+                      <a href="/2023/05/01/Longest-QwQ-Sequence/" title="Longest QwQ Sequence">
+                        <span class="hidden-mobile">Longest QwQ Sequence</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

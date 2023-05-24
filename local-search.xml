@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>太阳物理与sunpy基础</title>
+    <link href="/2023/05/19/%E5%A4%AA%E9%98%B3%E7%89%A9%E7%90%86%E4%B8%8Esunpy%E5%9F%BA%E7%A1%80/"/>
+    <url>/2023/05/19/%E5%A4%AA%E9%98%B3%E7%89%A9%E7%90%86%E4%B8%8Esunpy%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言">前言</h1><p>2023年5月18日，俺的“大学生创新训练计划”太阳多波段天气图及其长期演化（Solar synoptic maps at multiple passbandsand their long-termevolution）开始辣。由于本人之前主要搞的是行星磁层之类的，所以不甚了解，故开此贴，好好学习学习太阳物理的blablabla。</p><h1 id="section"></h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>空间物理</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+      <tag>空间物理</tag>
+      
+      <tag>太阳物理</tag>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Longest QwQ Sequence</title>
     <link href="/2023/05/01/Longest-QwQ-Sequence/"/>
     <url>/2023/05/01/Longest-QwQ-Sequence/</url>
@@ -30,8 +61,8 @@
   
   <entry>
     <title>磁层引论</title>
-    <link href="/2023/04/28/%E7%94%B5%E7%A6%BB%E5%B1%82%E4%B8%8E%E7%A3%81%E5%B1%82%E5%BC%95%E8%AE%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <url>/2023/04/28/%E7%94%B5%E7%A6%BB%E5%B1%82%E4%B8%8E%E7%A3%81%E5%B1%82%E5%BC%95%E8%AE%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <link href="/2023/04/28/%E7%A3%81%E5%B1%82%E5%BC%95%E8%AE%BA/"/>
+    <url>/2023/04/28/%E7%A3%81%E5%B1%82%E5%BC%95%E8%AE%BA/</url>
     
     <content type="html"><![CDATA[<h1 id="前言">前言</h1><blockquote><p>学习关键概念，理解概念之间的联系（定律、原理和功能）和概念的组合（物理图像、模型），大胆提出新想法和假设。</p><p>宇宙是由概念组成的！</p><p>——葛健 “原始创新：科学道路上的从0到1”</p></blockquote><p>俺认为没有充分了解基本概念，只知道“踏踏实实的按照要求去做”会完全限制住自己“天马行空的想”，最后只会学来“技术”，学不来“科学”，对今后的发展不仅无益，而且有害！</p><p>本文的参考教材是英国J.A.拉特克利夫的《电离层与磁层引论》、网络资源。</p><h1 id="磁层">磁层</h1><h2 id="磁层边界磁层顶">磁层边界，磁层顶</h2><ol type="1"><li>内部地磁场被压缩&amp;太阳风被排除，外部太阳风连续流动。内部区域就叫做<strong>磁层</strong>。其边界叫<strong>磁层顶</strong>。</li><li>边界所在之处，太阳风粒子动压与地磁场磁压强相等： <spanclass="math display">\[nmV^2=\frac{B&#39;^2}{2\mu_0}\]</span></li><li></li></ol>]]></content>
     
@@ -64,7 +95,7 @@
     <link href="/2023/04/26/2023%E8%AE%B0%E5%BD%95/"/>
     <url>/2023/04/26/2023%E8%AE%B0%E5%BD%95/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言">前言</h1><p>曾子曰：吾日三省吾身。看过一本书、一部电影，听过一场报告之后愣是让我复述出它的内容好比问我早上吃啥一样，困难且无用。但是，记录下来自己一年内看过的书、电影，听过的报告。首先可以帮助我快速想起来内容和收获，其次也可以一年来或者多年后“自省”。</p><p>2020年前没记录，2021年看过的书和电影靠回忆，2022年靠桌面上的txt，2023年开始直接同步update到主页上吧~</p><h1 id="看过的书">2023看过的书</h1><ol type="1"><li>2023.2.9 《北京法源寺》（繁体中文版）[台湾]李敖</li><li>2023.3.11 《真真假假》（简体中文版）[中国]谌容</li><li>2023.3.28《乐园——我的诺贝尔奖之路》（简体中文版）[日本]朝永振一郎</li><li>2023.4.25《技巧：如何用一年时间获得十年的经验》（简体中文版）[中国]郝培强</li><li>2023.4.28《中国当代政治与中国知识分子》（繁体中文版）[中国]刘晓波</li><li>2023.4.30 《我的京都》（简体中文版）[日本]渡边淳一</li><li>2023.5.6 《劝学篇》（简体中文版）[日本]福泽谕吉</li><li>2023.5.8《共产党宣言》（简体中文版）[德国]卡尔·马克思、弗里德里希·恩格斯</li></ol><h1 id="看过的电影">2023看过的电影</h1><ol type="1"><li>2023.1.16 《V字仇杀队》（V for Vendetta）</li><li>2023.3.2 《流浪地球2》（The Wandering Earth 2）</li><li>2023.3.24 《登月第一人》（First Man）</li></ol><h1 id="听过的讲座报告">2023听过的讲座/报告</h1><ol type="1"><li>2023.1.7 “利用数值平台助力木星探索”<ul><li>报告人：香港大学-张彬铮</li><li>腾讯会议直播</li></ul></li><li>2023.4.25 “面向国家重大需求的大气探测前沿发展与思考”<ul><li>报告人：中国科学院大气物理研究所-吕达仁、王鑫</li><li>中国科学技术大学东区活动中心五楼国际会议厅</li></ul></li><li>2023.4.26 “原始创新：科学道路上的从0到1”<ul><li>报告人：中国科学院上海天文台-葛健</li><li>中国科学技术大学东区水上报告厅</li></ul></li><li>2023.4.27 “What Did We Learn From The Moon and Why Do We Need To GoBack? Apollo to Artemis and Beyond”<ul><li>报告人：布朗大学-James W. Head</li><li>中国科学技术大学东区物质科研楼三楼报告厅</li></ul></li><li>2023.4.27 “Science Goals and Technology Challenges for the Future ofPlanetary exploration: A Horizon 2061 perspective”<ul><li>报告人：Research Institute in Astrophysics and Planetology-MichelBlanc</li><li>中国科学技术大学东区物质科研楼三楼报告厅</li></ul></li><li>2023.4.28 “地空学院出国经验交流会”<ul><li>报告人：地空19级出国毕业生</li><li>中国科学技术大学东区五教5401</li></ul></li><li>2023.4.29 “世俗的成功与失败，不过是你生命中的一部分”<ul><li>报告人：台北市政府-柯文哲</li><li>Youtube录播（2019.6.15 国立阳明大学毕业典礼）</li></ul></li><li>2023.4.29 “生死的智慧”<ul><li>报告人：国立台湾大学医学院附设医院-柯文哲</li><li>Youtube录播（2013.10.31 TEDxTaipei）</li></ul></li><li>2023.5.8 “Inheritance from Teratocarcinomas”<ul><li>报告人：卡迪夫大学-Martin J. Evans</li><li>中国科学技术大学东区大礼堂</li></ul></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言">前言</h1><p>曾子曰：吾日三省吾身。看过一本书、一部电影，听过一场报告之后愣是让我复述出它的内容好比问我早上吃啥一样，困难且无用。但是，记录下来自己一年内看过的书、电影，听过的报告。首先可以帮助我快速想起来内容和收获，其次也可以一年来或者多年后“自省”。</p><p>2020年前没记录，2021年看过的书和电影靠回忆，2022年靠桌面上的txt，2023年开始直接同步update到主页上吧~</p><h1 id="看过的书">2023看过的书</h1><ol type="1"><li>2023.2.9 《北京法源寺》（繁体中文版）[台湾]李敖</li><li>2023.3.11 《真真假假》（简体中文版）[中国]谌容</li><li>2023.3.28《乐园——我的诺贝尔奖之路》（简体中文版）[日本]朝永振一郎</li><li>2023.4.25《技巧：如何用一年时间获得十年的经验》（简体中文版）[中国]郝培强</li><li>2023.4.28《中国当代政治与中国知识分子》（繁体中文版）[中国]刘晓波</li><li>2023.4.30 《我的京都》（简体中文版）[日本]渡边淳一</li><li>2023.5.6 《劝学篇》（简体中文版）[日本]福泽谕吉</li><li>2023.5.8《共产党宣言》（简体中文版）[德国]卡尔·马克思、弗里德里希·恩格斯</li></ol><h1 id="看过的电影">2023看过的电影</h1><ol type="1"><li>2023.1.16 《V字仇杀队》（V for Vendetta）</li><li>2023.3.2 《流浪地球2》（The Wandering Earth 2）</li><li>2023.3.24 《登月第一人》（First Man）</li><li>2023.5.19 《2001太空漫游》（2001: A Space Odyssey）</li></ol><h1 id="听过的讲座报告">2023听过的讲座/报告</h1><ol type="1"><li>2023.1.7 “利用数值平台助力木星探索”<ul><li>报告人：香港大学-张彬铮</li><li>腾讯会议直播</li></ul></li><li>2023.4.25 “面向国家重大需求的大气探测前沿发展与思考”<ul><li>报告人：中国科学院大气物理研究所-吕达仁、王鑫</li><li>中国科学技术大学东区活动中心五楼国际会议厅</li></ul></li><li>2023.4.26 “原始创新：科学道路上的从0到1”<ul><li>报告人：中国科学院上海天文台-葛健</li><li>中国科学技术大学东区水上报告厅</li></ul></li><li>2023.4.27 “What Did We Learn From The Moon and Why Do We Need To GoBack? Apollo to Artemis and Beyond”<ul><li>报告人：布朗大学-James W. Head</li><li>中国科学技术大学东区物质科研楼三楼报告厅</li></ul></li><li>2023.4.27 “Science Goals and Technology Challenges for the Future ofPlanetary exploration: A Horizon 2061 perspective”<ul><li>报告人：Research Institute in Astrophysics and Planetology-MichelBlanc</li><li>中国科学技术大学东区物质科研楼三楼报告厅</li></ul></li><li>2023.4.28 “地空学院出国经验交流会”<ul><li>报告人：地空19级出国毕业生</li><li>中国科学技术大学东区五教5401</li></ul></li><li>2023.4.29 “世俗的成功与失败，不过是你生命中的一部分”<ul><li>报告人：台北市政府-柯文哲</li><li>Youtube录播（2019.6.15 国立阳明大学毕业典礼）</li></ul></li><li>2023.4.29 “生死的智慧”<ul><li>报告人：国立台湾大学医学院附设医院-柯文哲</li><li>Youtube录播（2013.10.31 TEDxTaipei）</li></ul></li><li>2023.5.8 “Inheritance from Teratocarcinomas”<ul><li>报告人：卡迪夫大学-Martin J. Evans</li><li>中国科学技术大学东区大礼堂</li></ul></li><li>2023.5.22 “不需要别人给的梦想，喜欢自己的生活，才是你的梦想”<ul><li>报告人：作家-黄山料</li><li>Youtube录播（2020.1.14 TEDxNCTU）</li></ul></li><li>2023.5.22 “心灵鸡汤？林夕的逆向思考人生”<ul><li>报告人：作词家-林夕</li><li>Youtube录播（2017.11.9 TEDxTaipei）</li></ul></li><li>2023.5.23 “人生没有一条路是白走的”<ul><li>报告人：台北市议会-邱威杰</li><li>Youtube录播（2019.5.20 TEDxNTHU）</li></ul></li></ol>]]></content>
     
     
     <categories>
